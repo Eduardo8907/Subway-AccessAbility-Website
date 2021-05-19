@@ -7,32 +7,30 @@
     <title>Stories</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="learnMore.css">
+    <link rel="stylesheet" href="header.css">
     <!--[if lt IE 9]>
 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 <![endif]-->
 </head>
 <body>
-    <div id="wrapper">
-        
+    <div id="wrapper"> 
+           
         <!-- START HEADER -->
         <header>
-            <figure>
-                <a href="index.html"><img src="images/logo.png" alt="SAA Logo"></a>
-                <figcaption>Subway AccessAbility</figcaption>
-            </figure>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">About</a>
-                        <a href="learnMore.html">Learn More</a>
-                        <a href="stories.html">Stories</a>
-                        <a href="petition.html">Petition</a>
-                    </li>
-                </ul>
-            </nav> 
-            <nav class="socialNav">
-                
-            </nav>
+            <img id="logo" src="images/Wordmark.png" alt="logo">
+            <p>Subway AccessAbility</p>
+    
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="learnMore.html">Learn More</a>
+                    <a class="active" href="stories.html">Stories</a>
+                    <a href="petition.html">Petition</a>
+                </li>
+            </ul>
+        </nav>
         </header> 
         <!-- END HEADER -->
         
@@ -42,41 +40,41 @@
             </figure>
             <hr>
             
-         <section class="content" class="row">
-            <video height="300" controls class="column">
-                    <source src="images/momTestimony.mp4" type="video/mp4">
-            </video>
+            
+
+         <section id="mission" class="content" class="row" >
+             <h1 class="test">Video Testimonies</h1>
+            <iframe class="column" src="https://player.vimeo.com/video/552244083" width="640" height="250" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <h2>Alba, Queens, NY:</h2>
-            <p>A mom from queens shares her experience from  </p>
+            <p>This mom from queens shares some of the difficulties she faces when trying to use the subway with no accessible station near her home. A elevator in a station near her home would help her a lot when she travels with her little, a stroller, a groceries.  </p>
+            <!-- <hr> -->
         </section>   
 
-        <section class="content" class="row">
-            <video height="300" controls class="column">
-                <source src="images/amputeeTestimony.mp4" type="video/mp4">
-        </video>
+        <section id="mission" class="content" class="row">
+                <iframe class="column" src="https://player.vimeo.com/video/552243378" width="640" height="250" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <h2>Eduardo, Maspeth, NY:</h2>
-            <p >Aida is a full time mother of two. She recently enrolled her child in school. She started commuting by train, with her younger child in a stroller and the other on a scooter. After a few weeks she became exhausted from constantly having to take the stairs because of out of service elevators. She opted out and started to take car services which is a lot more expensive. <br><br>
-            Many moms constantly struggle in stations with their children, strollers and bags. They need the extra help an elevator provides.</p>
-            
+            <p>A born New Yorker and recent amputee talks about why he does not use the subway like he once did. After becoming disabled he came to learn how inaccessible the subway really is. He also mentions how the pandemic also influences why he does not want to use to subway. </p>
+            <!-- <hr> -->
         </section> 
         
-        <section class="content" class="row">
-           
+        
+
+        <section id="weare" class="content" class="row">
+           <h1 class="test">Written Testimonies</h1>
             <h2 >Ted Moris, Bronx, NY:</h2>
             <p >My name is Ted Morris and I’ve been living and working in New York City for over 25 years. When I first moved here, I was not disabled. The MTA was (and, in many repsects, still is) a wonderful service that, for a relatively small amount of money, took me where I needed to go safely and efficiently.
 
-                Unfortunately, in 2019 my right leg was aputated above the knee. I was confined to a wheelchair for a while still needing to take public transportation. The buses were a big help and easily accessed, but the trains were a whole other story.
+                <p>Unfortunately, in 2019 my right leg was aputated above the knee. I was confined to a wheelchair for a while still needing to take public transportation. The buses were a big help and easily accessed, but the trains were a whole other story.</p>
                 
-                The limited number of accessible stations make it very difficult to travel between boroughs. I live in the Bronx. It is very hilly, difficult, and dangerous just to travel in a wheelchair or to walk with my prosthetic. Then the sheer number of the stairs at the elevated stations are insurmountable when I’m using the prosthetic and impossible for a wheelchair.
+                <p>The limited number of accessible stations make it very difficult to travel between boroughs. I live in the Bronx. It is very hilly, difficult, and dangerous just to travel in a wheelchair or to walk with my prosthetic. Then the sheer number of the stairs at the elevated stations are insurmountable when I’m using the prosthetic and impossible for a wheelchair.</p>
                 
-                New York City is one of the most accessible cities in the country and I am grateful for that. My hope is that we can take the next step and add elevators to more train stations and make NYC the number one accessible city in the USA.
+                <p>New York City is one of the most accessible cities in the country and I am grateful for that. My hope is that we can take the next step and add elevators to more train stations and make NYC the number one accessible city in the USA.
                 </p>
                 <!-- <hr>   -->
-        </section>
+            </section>
   
 
-            <section  class="content" class="row">
-                      <!-- <hr> -->
+            <section  class="row" >
                 <div class="column">
                     <p>We are demanding change,  but we  need your help. <span>Join us!</span> </p>
                     <p>Here are some of the ways you can help...</p>
@@ -91,14 +89,11 @@
                         <li>Or share the difficulties you encounter when trying to use the subway.</li>
                     </ul>
                 </div>
-            
-            <!-- <hr> -->
-                <aside class="column">
+                <div class="column">
                     <p>You can upload an image or video, telling us about your concerns. You might see your story on our page!</p>
                     <button>Share Your Story</button>
-                </aside>
+                </div>
             </section>
-        </div>
         
         
         <!-- START FOOTER -->
@@ -112,7 +107,6 @@
 
             &copy; 2021 Subway AccessAbility
         </footer>
-        <!-- END FOOTER -->
         <!-- END FOOTER -->
         
         
