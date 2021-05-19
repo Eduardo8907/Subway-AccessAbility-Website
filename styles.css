@@ -1,6 +1,7 @@
  header, section, footer,aside, nav, article, figure, figcaption {
     display: block;
-} Will help  
+} 
+  
 
 body {
     font-family: helvetica, Arial, sans-serif;
@@ -25,9 +26,12 @@ header {
     align-items:center;
 }
 
-/* LOGO */
+/*** LOGO CSS ***/
 figure {
         margin-left:5em;
+}
+figure img{
+    max-width: 100%;
 }
 figcaption{
     /* MAKE TEXT ROTATE 
@@ -40,8 +44,9 @@ figcaption{
     */
     font-weight: bold;
     font-size: 25px;
-    margin-left: -25px;
-}  /* END LOGO */
+    /* margin-left: -25px; */
+}
+/*** END LOGO CSS ***/
 
 nav ul li {
     width: 10px;
@@ -74,24 +79,98 @@ nav a.active {
   color: black;
 }
 
-#content {
+.content {
     clear:both;
-    padding: 2em;
+    padding: 0 5%;
     text-align: left;
+    max-width: 100%;
+    
 } 
+h1 {
+    margin-left: 10%;
+    color: blue;
+}
+#mission {
+    padding: 0 5%;
+    background-color: rgba(226, 229, 38, 0.48);
+    height: 150%;
+}
+#weare {
+    background-color: rgba(255, 184, 2, 0.62);
+    padding: 0 5%;
+}
 
 img {
    margin-left: 0 auto;
 }
 
 
+
+
+/*** FOOTER ***/
+
 footer {
     background-color: #1F68BD;
     text-align: center;
+
 }
 
 footer li {
+    list-style-type: none;
+     display: inline-flex;
+}
+
+footer a {
     color: white;
     padding: 10px;
-    display: inline-flex;
+    text-decoration: none;
+   
 }
+
+hr {
+    margin: 3%;
+}
+/*** END FOOTER ***/
+
+
+/* 
+if the width goes below 500px
+the images will stack on top of eachother
+*/
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    .column {
+        flex: 50%;
+        padding: 10px;
+        /* margin: 1em;  */
+        /* padding: 10% 10%; */
+        /* align-items: center; */
+    }  
+    h2, h3 {
+        max-width: 100%;
+        text-align: left;
+        padding: 5% 0 0 5%;
+        margin: 1em;
+        /* margin-top: 1em; */
+    }
+    p {
+        padding: 2em;
+    }
+   
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
+
+}
+
