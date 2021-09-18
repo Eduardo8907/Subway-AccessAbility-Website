@@ -1,40 +1,95 @@
-h2 {
-    padding-left: 6%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/*/// INTRO SECTION ///*/
+.introSection {
+    overflow: hidden;
+    height: 550px;
 }
-
-
-/* .column figcaption { 
+.introSection figure img{
+    width: 100%;
+    height: 550px;
+    filter: grayscale(70%);
+}
+/*/// FOLLOWING CSS PLACES DETAILS
+ON TOP OF THE IMAGE ///*/
+#mainTitle{
+    background-color: rgba(32, 32, 32, 0.192);
+    width: 30%;
+    font-size: 50px;
+    color: #ffc800;
     position: relative;
-    top: 50px;
-     
-} */
-.column {
-    float: left;
-    width: 50%;
-    max-height: 50%;
-    padding: 5px;
-    margin-left: 8%;
+    left: 12.5em;
+    bottom: 6em;
 }
-.column2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 25%;
-    margin-bottom: 3em;
+.subtitle{
+    background-color: rgba(32, 32, 32, 0.192);
+    width: 35%;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    left: 29.5em;
+    bottom: 12.5em;
 }
-.column a {
-    text-decoration: none;
-}
+/* /// END INTRO SECTION /// */
 
-.column a:hover {
-    text-decoration: underline;
-    color: #ffdb5b;
-}
-.column p {
+
+/* /// ADVOCACY CAMPAIGNS SECTION /// */
+h1 {
     color: rgb(0, 0, 0);
 }
-figcaption {
-    margin-top: 5%;
+.advocacyCampaigns {
+    padding: 0 5%;
+    background-color: rgba(226, 229, 38, 0.48);
+}
+.advocacyCampaigns img{
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    /* border: solid; */
+}
+.column { /* image column */
+    float: left;
+    width: 45%;
+    max-height: 50%;
+    margin-left: 8%;
+    margin-right: -25px;
+}
+.column2 { /* Description column */
+    width: 95%;
+    /* border: solid; */
+    /* display: flex;
+    flex-wrap: wrap;
+    flex: 25%; */
+    /* margin-bottom: 3em; */
+}
+.column2 a {
+    text-decoration: none;
+}
+.column2 a:hover {
+    text-decoration: underline;
+    /* color: #ffc800; */
+    color: black;
+}
+/* /// END ADVOCACY CAMPAIGN SECTION /// */
+
+
+/* /// LATEST NEWS /// */
+.latestNews { 
+    padding: 0 3% 3% 3%;
+    border-top: solid;
+    background-color: rgba(255, 184, 2, 0.62);
+}
+.row {
+    margin-bottom: 4%;
+    /* border: solid; */
+    display: inline-flex;
+    padding: 0 2%;
+    margin-left: 2%;
+    width: 90%;
+}
+.story img, figcaption{
+    width: 80%;
+    height: 80%;
+    margin: 0%;
 }
 figcaption a {
     text-decoration: none;
@@ -44,18 +99,14 @@ figcaption a {
 }
 figcaption a:hover {
     text-decoration: underline;
-    color: black;
+    /* color: #ffc800; */
+    color: rgb(0, 0, 0);
 }
-.row {
-    margin-bottom: 4%;
-    display: flex;
-    padding: 1em;
-}
-.row h2 {
-    margin: 2em;
-    text-align: left;
-}
-.row::after {
+
+
+
+
+/* .row::after {
     content: "";
     clear: both;
     display: table;
@@ -66,44 +117,15 @@ figcaption a:hover {
     padding: 0;
     width: 100%;
     height: 30em;
-}
+} */
 
 span {
     color: red;
 }
 
-#main{
-    color: #ffdb5b;
-    position: relative;
-    bottom: 12em;
-    left: 5em;
-    text-shadow: steelblue 10px 10px;
-}
-.subtitle{
-    color: white;
-    position: relative;
-    bottom: 24em;
-    left: 9em;
-}
-.sub2{
-    color: white;
-    position: relative;
-    bottom: 24em;
-    left: 22em;
-}
-.top {
-    position: relative;
-    bottom: 50em;
-    left: 54em; 
-    background: blue;
-    color: yellow;
-    
-}
-.bg {
-    position: absolute;
 
-}
 .petition {
     margin-left: 50%;
     margin-bottom: 5em;
 }
+

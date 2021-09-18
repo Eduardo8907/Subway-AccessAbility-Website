@@ -1,37 +1,116 @@
  header, section, footer, aside, nav, article, figure, figcaption {
     display: block;
 } 
-  
-
 body {
-    /* font-family: helvetica, Arial, sans-serif; */
     font-size: 16px;
     line-height: 1.5em;
     background-color: white;
-    border: solid; /* Only here to make the page box visible*/
-
 }
-
 #wrappper {
-    max-width: 80%;
-    margin: 0 auto;
-    
-}
-
-
-/*** latest news CSS ***/
-figure img{
     width: 100%;
-    height: 50%;
+    margin: 0 auto;
 }
-figcaption{
-    margin: 10 0 10 0;
-    font-weight: bold;
-    font-size: 100%;
-}
-/*** END  CSS ***/
 
-/* change link color on hover */
+/*/// INTRO SECTION ///*/
+.introSection {
+    overflow: hidden;
+    /* border: solid; */
+    /* background-image: url(images/86thNewElvator.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    padding: 0 0 5% 0;
+    /* height: 550px; */
+
+}
+.introSection video{
+    width: 100%;
+    height: 450px;
+    /* filter: grayscale(70%); */
+}
+/* SECTION CSS */
+/* .introSection {
+    width: 20%;
+    height: 20%;
+    border: solid;
+} */
+video{
+    position: relative;
+}
+section {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    /* border: solid ; */
+    margin: 0;
+}
+.mainTitle{
+    font-size: 50px;
+    color: #ffc800;
+    position: relative;
+    bottom: 6em;
+    left: 10.9em;
+}
+h1 {
+    padding: 2%;
+    margin: 2% 0 0 5%;
+    text-decoration: underline;
+    font-size: 28px;
+}
+#missionStatement {
+    background-color: rgba(226, 229, 38, 0.48);
+    padding: 2em 15%;
+    margin: 0;
+}
+#whoWeAre {
+    background-color: rgba(255, 184, 2, 0.62);
+    padding: 2em 15%;
+    margin: 0;
+}
+#tellUs {
+    color: red;
+    font-weight: bold;
+}
+#contact {
+    color: black;
+    font-weight: normal;
+}
+#contactEmail {
+    color: black;
+    font-weight: normal;
+}
+#questions {
+    font-weight: lighter;
+}
+q {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* END SECTION CSS */
+
+
+
+/*** FOOTER ***/
+footer {
+    background-color: #1F68BD;
+    text-align: center;
+    padding: 1%;
+    font-size: 18px;
+}
+footer ul {
+    margin: 0 10%;
+    display: inline-flex;
+    width: 25%;
+    list-style-type: none;
+}
+footer ul li {
+    display: block;
+    padding: 0 2%;
+}    
+    
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
 li a:hover {
     background-color: yellow;
     color: black;
@@ -42,91 +121,23 @@ h2 a {
     color: blue;
 
 }
-
 h2 a:hover {
     color: black;
     text-decoration: underline;
 }
-
-
-nav a.active {
-  background-color: yellow;
-  color: black;
-}
-
-.content {
-    clear:both;
-    padding: 0 5%;
-    text-align: left;
-    max-width: 100%;
-    /* margin: 10%; */
-} 
-h1 {
-    margin: 5% 0 5% 0;
-    color: blue;
-    font-size: 3em;
-    text-align: center;
-}
-
-#mission {
-    background-color: rgba(226, 229, 38, 0.48);
-    padding: 2em 5%;
-    margin: 0;
-    /* height: 150%; */
-}
-#weare {
-    background-color: rgba(255, 184, 2, 0.62);
-    padding: 2em 5%;
-    margin: 0;
-}
-section {
-    /* border: solid ; */
-    margin: 5% 0;
-}
-p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-video{
-    position: relative;
-}
-img {
-   margin-left: 0 auto;
-   
-}
-iframe{
-    /* margin: 3em; */
-    height: 100%;
-    
-}
-
-
-hr {
-    margin: 3em;
-}
-
-/*** FOOTER ***/
-
-footer {
-    background-color: #1F68BD;
-    text-align: center;
-
-}
-
-footer li {
-    list-style-type: none;
-     display: inline-flex;
-}
-
-footer a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-   
-}
-
-
 /*** END FOOTER ***/
+
+
+
+
+
+
+figcaption{
+    margin: 10 0 10 0;
+    font-weight: bold;
+    font-size: 100%;
+} 
+
 
 
 /* 
