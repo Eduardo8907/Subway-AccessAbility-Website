@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="petition.css">
     <link rel="stylesheet" href="header.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 <![endif]-->
@@ -18,13 +20,16 @@
         <!-- START HEADER -->
         <header>
             <img id="logo" src="images/Wordmark.png" alt="logo">
-            <p>Subway AccessAbility</p>
+            <p>SubwayAccessAbility</p>
         </header>
-            <nav>
+            <nav class="topnav" id="myTopnav">
                 <a href="index.html">Home</a>
                 <a href="learnMore.html">Learn More</a>
                 <a href="stories.html">Stories</a>
                 <a class="active" href="petition.html">Petition</a>
+                <!-- javascript below is used to open and close the topnav on small screens -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
             </nav>
         <!-- END HEADER -->
         
@@ -41,7 +46,7 @@
             <h1>Help by signing the petition!</h1>
             <p class="description">The installation of more elevators will not only improve wheelchair accessibility but will have a huge impact on New Yorkers and visitors. For this reason, we invite everybody to contribute to petitioning  for a necessity and civil right. </p>
             <p class="description">NYC is always on the move and the subways system is the best way to go from borough to borough. We want the subway to have more accessibility by getting elevators to more stations. Sign the petition and let's keep pushing until every station is accessible to everyone. </p>
-            <button class="petition"><a href="http://chng.it/XfRmZc6S">Sign Here</a></button>
+            <button ><a href="http://chng.it/XfRmZc6S">Sign Here</a></button>
         </section>
         
         
@@ -60,6 +65,18 @@
                <p> &copy; 2021 Subway AccessAbility</p>
             </footer>
         <!-- END FOOTER -->
+        <!-- hamburger menu scipt for top Nav 
+        ------------------------------------>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
         
         
     </div> <!-- end wrapper-->

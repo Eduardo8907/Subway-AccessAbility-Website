@@ -1,19 +1,20 @@
 /*/// INTRO SECTION ///*/
-.introSection {
-    overflow: hidden;
-    height: 500px;
+/* .introSection { */
+    /* overflow: hidden; */
+    /* height: 500px; */
     /* background-image: url(images/1800x1118web.png); */
     /* background-size: cover; */
     /* filter: grayscale(60%); */
-}
-figure img{
+/* } */
+/* figure img{
     width: 100%;
     height: 500px;
     filter: grayscale(60%);
-}
+} */
 /*/// FOLLOWING CSS PLACES DETAILS
 ON TOP OF THE IMAGE ///*/
 #mainTitle{
+    background-color: rgba(32, 32, 32, 0.192);
     font-size: 50px;
     color: #ffc800;
     position: relative;
@@ -21,6 +22,7 @@ ON TOP OF THE IMAGE ///*/
     left: 10.9em;
 }
 .subtitle{
+    background-color: rgba(32, 32, 32, 0.192);
     font-size: 25px;
     color: white;
     position: relative;
@@ -28,6 +30,7 @@ ON TOP OF THE IMAGE ///*/
     left: 26em;
 }
 .sub2{
+    background-color: rgba(32, 32, 32, 0.192);
     color: white;
     position: relative;
     bottom: 13em;
@@ -73,6 +76,7 @@ iframe {
 .column {
     float: left;
     width: 33.33%;
+    margin: 2%;
 }
 /*/// WRITTEN TESTIMONIES ///*/
 .writtenTestimonies {
@@ -93,16 +97,14 @@ iframe {
 /*/// END TESTIMONIES CSS ///*/
 
 
-/* OTHER WAYS TO GET INVOLVED */
-/* JOIN US */
+/* OTHER WAYS TO GET INVOLVED 
+ JOIN US 
+ ----------------------------*/
 .row {
     margin: 0;
-    padding: 2%;
+    padding: 5%;
     background-color: rgba(226, 229, 38, 0.48);
     /* border-top: solid; */
-}
-.column{
-    margin: 2%;
 }
 #join { /* SPAN:JOIN US */
     font-weight: bold;
@@ -111,9 +113,7 @@ iframe {
 li {
     margin: 1%;
 }
-#upload {
-    padding-top: 6%;
-}
+
 button {
     margin-left: 60%;
     margin-top: 5%;
@@ -157,3 +157,74 @@ button a:hover {
     clear: both;
     display: table;
 } */
+
+
+
+/* START MEDIA QUERIES
+   mobile queries
+-------------------- */
+@media screen and (max-width: 767px) {
+    #mainTitle{ /* place above image */
+        width: 73%;
+        font-size: 30px;
+        left: 2em;
+        bottom: 9em;
+    }
+    .subtitle{ /* place above image */
+        width: 55%;
+        font-size: 18px;
+        left: 7em;
+        bottom: 15em;
+    }
+    .sub2 {
+        width: 19%;
+        left: 6em;
+        bottom: 10.5em;
+    }
+    .topButton {
+        width: 20%;
+        height: 10%;
+        bottom: 20em;
+        right: 4em;
+    }
+    /* video testimonies section
+    ------------------------ */
+    .videoTestimony {
+        background-color: rgba(226, 229, 38, 0.48);
+        padding: 5%;
+        flex-direction: column;
+        /* border-top: solid; */
+    }
+    .videoTestimony iframe{
+        width: 100%;
+        margin: 0%;
+
+    }
+    .column { /* image column */
+        /* border: solid; */
+        width: 100%;
+        padding: 3%;
+    }
+    .column p {
+        width: 98%;
+        padding: 1%;
+    }
+    .writtenTestimonies {
+        padding: 5%;
+    }
+    figure img{
+        border-style: dashed;
+        width: 10%;
+        height: 10%;
+        margin: 0%;
+        position: relative;
+        bottom: 2em;
+    }
+    button {
+        width: 30%;
+        height: 30px;
+        font-size: 16px;
+        position: relative;
+        bottom: 2em;
+    }
+}

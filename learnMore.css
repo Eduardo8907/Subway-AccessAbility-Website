@@ -1,5 +1,5 @@
 /*/// INTRO SECTION ///*/
-.introSection {
+/* .introSection {
     overflow: hidden;
     height: 550px;
 }
@@ -7,7 +7,7 @@
     width: 100%;
     height: 550px;
     filter: grayscale(70%);
-}
+} */
 /*/// FOLLOWING CSS PLACES DETAILS
 ON TOP OF THE IMAGE ///*/
 #mainTitle{
@@ -35,8 +35,9 @@ ON TOP OF THE IMAGE ///*/
 h1 {
     color: rgb(0, 0, 0);
 }
-.advocacyCampaigns {
+.advocacyCampaigns { /* ROW */
     padding: 0 5%;
+    /* margin: 0; */
     background-color: rgba(226, 229, 38, 0.48);
 }
 .advocacyCampaigns img{
@@ -53,22 +54,22 @@ h1 {
     margin-left: 8%;
     margin-right: -25px;
 }
-.column2 { /* Description column */
-    width: 95%;
+/* .column2 { Description column */
+    /* width: 95%; */
     /* border: solid; */
     /* display: flex;
     flex-wrap: wrap;
     flex: 25%; */
     /* margin-bottom: 3em; */
-}
-.column2 a {
-    text-decoration: none;
-}
-.column2 a:hover {
-    text-decoration: underline;
+/* } */
+/* .column2 a { */
+    /* text-decoration: none; */
+/* } */
+/* .column2 a:hover { */
+    /* text-decoration: underline; */
     /* color: #ffc800; */
-    color: black;
-}
+    /* color: black; */
+/* } */
 /* /// END ADVOCACY CAMPAIGN SECTION /// */
 
 
@@ -129,3 +130,63 @@ span {
     margin-bottom: 5em;
 }
 
+/* START MEDIA QUERIES
+   mobile queries
+-------------------- */
+@media screen and (max-width: 767px) {
+    
+    #mainTitle{ /* place above image */
+        width: 50%;
+        font-size: 30px;
+        left: 5em;
+        bottom: 6.5em;
+    }
+    .subtitle{ /* place above image */
+        width: 50%;
+        font-size: 18px;
+        color: white;
+        position: relative;
+        left: 10em;
+        bottom: 11em;
+    }
+    h2{
+        font-size: 20px;
+    }
+    /* other campaigns section
+    ------------------------ */
+    .advocacyCampaigns {
+        background-color: rgba(226, 229, 38, 0.48);
+        padding: 5%;
+        flex-direction: column;
+        /* border-top: solid; */
+    }
+    .advocacyCampaigns img{
+        /* flex: 25%; */
+        width: 100%;
+        margin: 0%;
+
+    }
+    .column { /* image column */
+        /* border: solid; */
+        width: 85%;
+    }
+    /* LATEST NEWS 
+    ------------ */
+.latestNews { 
+    background-color: rgba(255, 184, 2, 0.62);
+    padding: 5%;
+
+}
+.row {
+
+    display: inline-flex;
+    padding: 0 2%;
+    margin-left: 2%;
+    width: 90%;
+}
+.story {
+    width: 100%;
+
+}
+    
+}

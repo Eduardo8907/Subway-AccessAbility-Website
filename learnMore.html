@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="learnMore.css">
     <link rel="stylesheet" href="header.css">
-
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 <![endif]-->
@@ -21,13 +22,16 @@
         <!-- START HEADER -->
         <header>
             <img id="logo" src="images/Wordmark.png" alt="logo">
-            <p>Subway AccessAbility</p>
+            <p>SubwayAccessAbility</p>
         </header>
-            <nav>
+            <nav class="topnav" id="myTopnav">
                 <a href="index.html">Home</a>
                 <a class="active" href="learnMore.html">Learn More</a>
                 <a href="stories.html">Stories</a>
                 <a href="petition.html">Petition</a>
+                <!-- javascript below is used to open and close the topnav on small screens -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
             </nav>
         <!-- END HEADER -->
 
@@ -48,7 +52,7 @@
             <figure class="column">
                 <img src="images/ADC.png" alt="Access Denied Campaign">
             </figure>
-            <div class="column2">
+            <div class="column">
                 <h2><a href="https://transitcenter.org/campaigns/access-denied-campaign/">Access Denied Campaign</a></h2>
                 <p>New York City has the least accessible subway system in the country. Our campaign is holding the MTA accountable to build new elevators at 50 stations in the next five years, and to make the system entirely accessible by 2034.</p>
             </div>  
@@ -58,7 +62,7 @@
             <figure class="column">
                 <img src="images/riseandresisit.png" alt="Rise and Resist">
             </figure>
-            <div class="column2">
+            <div class="column">
             <h2><a href="https://www.riseandresist.org/elevator-action-group">Rise and Resist: Elevator Action Group</a></h2>
             
             <p>Through actions at subway stations, attending MTA meetings, petitioning community boards, writing letters, attending court hearings and working with other organizations, we are determined to make New York City’s transportation system more accessible.</p>
@@ -69,7 +73,7 @@
             <figure class="column">
                 <img src="images/strandedCampaign.png" alt="Stranded Campaign">
             </figure>
-            <div class="column2">                <h2><a href="https://transitcenter.org/campaigns/stranded-rider-stories-from-the-transit-crisis/">Stranded: Rider Stories From the Transit Crisis</a></h2>
+            <div class="column">                <h2><a href="https://transitcenter.org/campaigns/stranded-rider-stories-from-the-transit-crisis/">Stranded: Rider Stories From the Transit Crisis</a></h2>
             <p>COVID-19 has caused an unprecedented fiscal crisis for transit service in U.S. cities. Policy makers must
                 intervene to save transit and prevent millions of Americans from losing access to work and school - and
                 the ability to lead full lives. Your voice can make a difference. By telling the story of how you rely
@@ -82,7 +86,6 @@
 
         <!-- LATEST NEWS -->
         <section class="latestNews">
-            
             <h1>Latest News</h1>
             <div class="row">
                 <figure class="story">
@@ -125,6 +128,18 @@
             </footer>
         <!-- END FOOTER -->
 
+                <!-- hamburger menu scipt for top Nav 
+        ------------------------------------>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
 
     </div> <!-- end wrapper-->
 </body>

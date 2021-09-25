@@ -1,14 +1,14 @@
 /*/// INTRO SECTION ///*/
-.introSection {
+/* .introSection {
     overflow: hidden;
     height: 500px;
-    /* border: solid; */
+    border: solid;
 }
 .introSection figure img{
     width: 100%;
     height: 500px;
     filter: grayscale(70%);
-}
+} */
 /*/// FOLLOWING CSS PLACES DETAILS
 ON TOP OF THE IMAGE ///*/
 #mainTitle{
@@ -49,7 +49,9 @@ ON TOP OF THE IMAGE ///*/
 
 #petitionDescription {
     /* border: solid; */
-    margin: 0 0 10% 0;
+    margin: 0 0 0% 0;
+    padding: 5% 0;
+    background-color: rgba(226, 229, 38, 0.48);
 
 }
 .description {
@@ -77,4 +79,38 @@ button:hover {
 }
 button a:hover {
     color: white;
+}
+
+
+/* START MEDIA QUERIES
+   mobile queries
+-------------------- */
+@media screen and (max-width: 767px) {
+    #mainTitle{ /* place above image */
+        width: 60%;
+        font-size: 30px;
+        left: 5em;
+        bottom: 8em;
+    }
+    .subtitle{ /* place above image */
+        width: 25%;
+        font-size: 18px;
+        left: 10em;
+        bottom: 14em;
+    }
+    .topButton {
+        background-color: #ffc800;
+        width: 20%;
+        height: 30px;
+        position: relative;
+        left: 25em;
+        bottom: 23em;
+    }
+    button {
+        width: 20%;
+        height: 30px;
+        position: relative;
+        left: 25em;
+        background-color: #ffc800;
+    }
 }

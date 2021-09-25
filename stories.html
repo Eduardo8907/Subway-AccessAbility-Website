@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stories.css">
     <link rel="stylesheet" href="header.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 <![endif]-->
@@ -18,13 +20,16 @@
         <!-- START HEADER -->
         <header>
             <img id="logo" src="images/Wordmark.png" alt="logo">
-            <p>Subway AccessAbility</p>
+            <p>SubwayAccessAbility</p>
         </header>
-        <nav>
+        <nav class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a href="learnMore.html">Learn More</a>
             <a class="active" href="stories.html">Stories</a>
             <a href="petition.html">Petition</a>
+            <!-- javascript below is used to open and close the topnav on small screens -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
         </nav>
         <!-- END HEADER -->
         
@@ -41,34 +46,37 @@
 
         <!-- VIDEO TESTIMONIES -->
         <!-- FIRST ROW : VIDEO | DISCRIPTION -->
-        <section class="videoTestimony" class="row" >
+        <section class="videoTestimony"  >
              <h1>Video Testimonies</h1>
 
             <iframe class="column" src="https://player.vimeo.com/video/552244083" width="640" height="250" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            
-            <h2>Alba, Queens, NY:</h2>
-            <p>This mom from queens shares some of the difficulties she faces when trying to use the subway with no accessible station near her home. A elevator in a station near her home would help her a lot when she travels with her little, a stroller, a groceries.  </p>
+            <div class="column">
+                <h2>Alba, Queens, NY:</h2>
+                <p>This mom from queens shares some of the difficulties she faces when trying to use the subway with no accessible station near her home. A elevator in a station near her home would help her a lot when she travels with her little one, a stroller, and groceries.  </p>
+            </div>
         </section>   
         <!-- SECOND ROW : VIDEO || DISCRIPTION -->
-        <section class="videoTestimony" class="row">
+        <section class="videoTestimony" >
             <iframe class="column" src="https://player.vimeo.com/video/552243378" width="640" height="250" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <h2>Eduardo, Maspeth, NY:</h2>
-            <p>A born New Yorker and recent amputee talks about why he does not use the subway like he once did. After becoming disabled he came to learn how inaccessible the subway really is. He also mentions how the pandemic also influences why he does not want to use to subway. </p>
+            <div class="column">
+                <h2>Eduardo, Maspeth, NY:</h2>
+                <p>A born New Yorker and recent amputee talks about why he does not use the subway like he once did. After becoming disabled he came to learn how inaccessible the subway really is. He also mentions how the pandemic also influences why he does not want to use to subway. </p>
+            </div>
         </section> 
         
         <!-- WRITTEN TESTIMONIES -->
-        <section  class="writtenTestimonies" class="row">
+        <section  class="writtenTestimonies" >
             <h1>Written Testimonies</h1>
             <figure class="column">
-                <img class="noFilter" src="images/tedMoris.png" alt="ted">
+                <img  class="noFilter" src="images/tedMoris.png" alt="ted">
             </figure>
-            <!-- <div  id="written"> -->
+            <div  class="column">
                 <h2 >Ted Morris, Bronx, NY:</h2>
                 <p>My name is Ted Morris and I’ve been living and working in New York City for over 25 years. When I first moved here, I was not disabled. The MTA was (and, in many repsects, still is) a wonderful service that, for a relatively small amount of money, took me where I needed to go safely and efficiently.</p>
                 <p>Unfortunately, in 2019 my right leg was amputated above the knee. I was confined to a wheelchair for a while, still needing to take public transportation. The buses were a big help and easily accessed, but the trains were a whole other story.</p>
                 <p>The limited number of accessible stations make it very difficult to travel between boroughs. I live in the Bronx. It is very hilly, difficult, and dangerous just to travel in a wheelchair or to walk with my prosthetic. Then the sheer number of the stairs at the elevated stations are insurmountable when I’m using the prosthetic and impossible for a wheelchair.</p>
                 <p>New York City is one of the most accessible cities in the country and I am grateful for that. My hope is that we can take the next step and add elevators to more train stations and make NYC the number one accessible city in the USA.</p>
-            <!-- </div> -->
+            </div>
         </section>
   
         <!-- OTHER WAYS TO GET INVOLVED -->
@@ -113,6 +121,18 @@
             </footer>
         <!-- END FOOTER -->
         
+                <!-- hamburger menu scipt for top Nav 
+        ------------------------------------>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
         
     </div> <!-- end wrapper-->
     </body>

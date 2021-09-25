@@ -8,6 +8,8 @@
     <title>Subway AccessAbility Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="header.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 <![endif]-->
@@ -19,13 +21,17 @@
         <!-- START HEADER -->
         <header>
             <img id="logo" src="images/Wordmark.png" alt="logo">
-            <p>Subway AccessAbility</p>
+            <p>SubwayAccessAbility</p>
         </header>
-            <nav>
+            <nav class="topnav" id="myTopnav">
                 <a class="active" href="index.html">Home</a>
-                <a href="learnMore.html">Learn More</a>
+                <a class="navLi" href="learnMore.html">Learn More</a>
                 <a href="stories.html">Stories</a>
                 <a href="petition.html">Petition</a>
+
+                <!-- javascript below is used to open and close the topnav on small screens -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
             </nav>
         <!-- END HEADER -->
 
@@ -75,6 +81,18 @@
         </footer>
         <!-- END FOOTER -->
 
+        <!-- hamburger menu scipt for top Nav 
+        ------------------------------------>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
 
     </div> <!-- end wrapper-->
 </body>
