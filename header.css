@@ -175,7 +175,11 @@ nav .icon {
 }
 /*  Mobile S view 
 -----------------------*/
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 321px) {
+    #wrapper {
+        width: 100%;
+        border: solid;
+    }
     header { /* subwayaccessability */
        width: 100%;
     }
@@ -188,6 +192,7 @@ nav .icon {
         bottom: 1.6em;
     }
     nav {
+        width: 50%;
         bottom: 47px;
     }
 }
