@@ -175,7 +175,7 @@ nav .icon {
 }
 /*  Mobile S view 
 -----------------------*/
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 320px) {
     #wrapper {
         width: 100%;
         border: solid;
