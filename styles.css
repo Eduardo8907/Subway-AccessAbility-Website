@@ -131,9 +131,7 @@ figcaption{
 
 
 
-/* if the width goes below 500px
-the images will stack on top of eachother
-----------------------------------------*/
+
 
 /* navbar media Query 
 makes navbar responsive
@@ -159,7 +157,16 @@ makes navbar responsive
       text-align: center;
     }
 }
-/* mobile media quaries
+/* 
+
+360x740 is mobile width
+414x736 is largest mobile width for android
+tablet 768 - 850 
+----------------------------------------*/
+@media screen and (max-width: 360px) {
+
+}
+/* tablet media quaries
 -----------------------*/
 @media screen and (max-width: 767px) {
     .introSection figure img{

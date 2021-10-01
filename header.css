@@ -7,7 +7,7 @@ body {
 header {
     background-color: rgba(249, 192, 22, 0.63);
     width: 100%;
-    display: inline-flex;
+    display: flex;
     align-items:center;
 }
 
@@ -60,13 +60,26 @@ nav .icon {
 
 
 /* MEDIA QUERIES 
----------------------------------------*/
+-  mobile portait view
+--------------------- */
+@media screen and (max-width: 412px) {
+    header p { /* subwayaccessability */
+        transform: rotate(-3deg); 
+        width: 100%;
+        padding: 0 15% 0 0;
+        /* height: 100px;  */
+        font-size: 38px;
+        /* font-weight: bold; */
+        /* color: blue; */
+        /* position: relative; */
+        /* right: 25%; */
+    }
+}
 
-
-/* mobile 
+/* tablet 
 ----------*/
 @media screen and (max-width: 767px) { 
-    header p {
+    header p { /* subwayaccessability */
         transform: rotate(-3deg); 
         width: 100%;
         padding: 0 15% 0 0;

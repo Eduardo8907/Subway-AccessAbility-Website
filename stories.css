@@ -163,12 +163,12 @@ button a:hover {
 /* START MEDIA QUERIES
    mobile queries
 -------------------- */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 360px) {
     #mainTitle{ /* place above image */
         width: 73%;
         font-size: 30px;
-        left: 2em;
-        bottom: 9em;
+        /* left: 2em; */
+        bottom: 50em;
     }
     .subtitle{ /* place above image */
         width: 55%;
@@ -176,6 +176,9 @@ button a:hover {
         left: 7em;
         bottom: 15em;
     }
+}
+@media screen and (max-width: 767px) {
+    
     .sub2 {
         width: 19%;
         left: 6em;
