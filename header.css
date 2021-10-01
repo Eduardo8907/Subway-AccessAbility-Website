@@ -60,51 +60,35 @@ nav .icon {
 
 
 /* MEDIA QUERIES 
--  mobile portait view
---------------------- */
-@media screen and (max-width: 412px) {
-    header p { /* subwayaccessability */
-        transform: rotate(-3deg); 
-        width: 100%;
-        padding: 0 15% 0 0;
-        /* height: 100px;  */
-        font-size: 20px;
-        /* font-weight: bold; */
-        /* color: blue; */
-        /* position: relative; */
-        /* right: 25%; */
-    }
-}
-
-/* tablet 
-----------*/
-@media screen and (max-width: 767px) { 
-    header p { /* subwayaccessability */
-        transform: rotate(-3deg); 
-        width: 100%;
-        padding: 0 15% 0 0;
-        /* height: 100px;  */
-        font-size: 38px;
-        font-weight: bold;
-        color: blue;
-        /* position: relative; */
-        /* right: 25%; */
-    }
-    #logo {
-        width: 15%;
+-------------- */
+/* desktop */
+@media screen and (min-width: 1024px) {
+    /* #logo {
+        width: 11%;
         position: relative;
-        float: left;
-        left: 6%;
-        bottom: 2em;
+        left: 12em;
+        bottom: 3em;
+        transform: rotate(-15deg)
     }
     nav {
-        bottom: 50px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        bottom: 70px;
     }
+    nav a {
+        color: white;
+        font-size: 17px;
+        float: none;
+        display: inline-block;
+        padding: 0px 8%;
+    } */
+  
     
-   
+    
 }
-
-
 /* tablet */
 @media screen and (min-width: 768px) and (max-width:1023px) {
     #logo {
@@ -139,31 +123,72 @@ nav .icon {
         padding: 0px 8%;
     }
 }
-/* desktop */
-@media screen and (min-width: 1024px) {
-    /* #logo {
-        width: 11%;
+/* tablet 
+----------*/
+@media screen and (max-width: 767px) { 
+    #logo {
+        width: 15%;
         position: relative;
-        left: 12em;
-        bottom: 3em;
-        transform: rotate(-15deg)
+        float: left;
+        left: 6%;
+        bottom: 2em;
+    }
+    header p { /* subwayaccessability */
+        transform: rotate(-3deg); 
+        width: 100%;
+        padding: 0 15% 0 0;
+        /* height: 100px;  */
+        font-size: 38px;
+        font-weight: bold;
+        color: blue;
+        /* position: relative; */
+        /* right: 25%; */
+    }
+    
+    nav {
+        bottom: 50px;
+    }
+    
+   
+}
+/*  Mobile L view 425x718
+-----------------------*/
+@media screen and (max-width: 426px) {
+    header { /* subwayaccessability */
+       width: 100%;
+       border: solid;
+    }
+    header p {
+        /* width: 10%; */
+        font-size: 26px;
+    }
+    #logo {
+        width: 14%;
+        position: relative;
+        float: left;
+        left: 7%;
+        bottom: 1.6em;
     }
     nav {
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        text-align: center;
-        background-color: black;
-        bottom: 70px;
+        bottom: 49px;
     }
-    nav a {
-        color: white;
-        font-size: 17px;
-        float: none;
-        display: inline-block;
-        padding: 0px 8%;
-    } */
-  
-    
-    
 }
+/*  Mobile S view 
+-----------------------*/
+@media screen and (max-width: 412px) {
+    header { /* subwayaccessability */
+       width: 100%;
+    }
+    header p {
+        font-size: 20px;
+    }
+    #logo {
+        width: 13%;
+        left: 5%;
+        bottom: 1.6em;
+    }
+    nav {
+        bottom: 47px;
+    }
+}
+
