@@ -151,31 +151,47 @@ nav .icon {
     
    
 }
-/*  Mobile L view 425x718
------------------------*/
-@media screen and (max-width: 426px) {
-    header { /* subwayaccessability */
-       width: 100%;
-       /* border: solid; */
-    }
+/*   
+-798x332-Galaxy S8+
+landscape View
+------------------*/
+@media screen and (max-width: 799px) {
     header p {
-        /* width: 10%; */
-        font-size: 26px;
+        font-size: 46px;
+    }
+    #logo {
+        width: 13%;
+        position: relative;
+        float: left;
+        left: 5%;
+        bottom: 2em;
+    }
+    nav {
+        bottom: 46px;
+    }
+}
+/*  Mobile M view 
+-412x718-Galaxy S8+
+Portrait View
+------------------*/
+@media screen and (max-width: 413px) {
+    header p {
+        font-size: 24px;
     }
     #logo {
         width: 14%;
         position: relative;
         float: left;
-        left: 7%;
+        left: 5%;
         bottom: 1.6em;
     }
     nav {
-        bottom: 49px;
+        bottom: 46px;
     }
 }
 /*  Mobile S view 
------------------------*/
-/* @media screen and (max-width: 320px) {
+-----------------*/
+@media screen and (max-width: 320px) {
     #wrapper {
         width: 100%;
         border: solid;
@@ -192,8 +208,8 @@ nav .icon {
         bottom: 1.6em;
     }
     nav {
-        width: 50%;
-        bottom: 47px;
+        /* width: 50%; */
+        bottom: 45px;
     }
-} */
+}
 
