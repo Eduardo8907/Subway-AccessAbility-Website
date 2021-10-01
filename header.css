@@ -156,7 +156,7 @@ nav .icon {
 @media screen and (max-width: 426px) {
     header { /* subwayaccessability */
        width: 100%;
-       border: solid;
+       /* border: solid; */
     }
     header p {
         /* width: 10%; */
@@ -175,12 +175,12 @@ nav .icon {
 }
 /*  Mobile S view 
 -----------------------*/
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
     #wrapper {
         width: 100%;
         border: solid;
     }
-    header { /* subwayaccessability */
+    header { 
        width: 100%;
     }
     header p {
@@ -195,5 +195,5 @@ nav .icon {
         width: 50%;
         bottom: 47px;
     }
-}
+} */
 
