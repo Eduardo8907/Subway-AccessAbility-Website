@@ -114,3 +114,66 @@ button a:hover {
         background-color: #ffc800;
     }
 }
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+    #mainTitle{ /* place above image */
+        width: 50%;
+        font-size: 30px;
+        left: 5em;
+        bottom: 6.5em;
+    }
+    .subtitle{ /* place above image */
+        width: 50%;
+        font-size: 18px;
+        color: white;
+        position: relative;
+        left: 10em;
+        bottom: 11em;
+    }
+    h2{
+        font-size: 20px;
+    }
+    /* other campaigns section
+    ------------------------ */
+    .advocacyCampaigns {
+        background-color: rgba(226, 229, 38, 0.48);
+        padding: 5%;
+        flex-direction: column;
+        /* border-top: solid; */
+    }
+    .advocacyCampaigns img{
+        /* flex: 25%; */
+        width: 100%;
+        margin: 0%;
+
+    }
+    .column { /* image column */
+        /* border: solid; */
+        width: 85%;
+    }
+    /* LATEST NEWS 
+    ------------ */
+.latestNews { 
+    background-color: rgba(255, 184, 2, 0.62);
+    padding: 5%;
+
+}
+.row {
+
+    display: inline-flex;
+    padding: 0 2%;
+    margin-left: 2%;
+    width: 90%;
+}
+.story {
+    width: 100%;
+
+}
+    
+}

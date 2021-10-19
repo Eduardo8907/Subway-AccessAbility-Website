@@ -87,19 +87,18 @@ footer {
     background-color: #1F68BD;
     text-align: center;
     padding: 1%;
-    font-size: 18px;
+    font-size: 16px;
 }
 footer ul {
-    margin: 0 10%;
-    display: inline-flex;
-    width: 25%;
+    /* margin: 0 8% 0 0; */
+    /* display: inline; */
+    /* width: 5%; */
     list-style-type: none;
 }
 footer ul li {
     display: block;
-    padding: 0 2%;
-}    
-    
+    /* padding: 0 2%; */
+}       
 footer a {
     color: white;
     text-decoration: none;
@@ -119,8 +118,7 @@ h2 a:hover {
     color: black;
     text-decoration: underline;
 }
-/* End of footer CSS
--------------------*/
+/*  /footer  */
 
 
 figcaption{
@@ -132,10 +130,9 @@ figcaption{
 
 
 
-
-/* navbar media Query 
-makes navbar responsive
-----------------------*/
+/* MEDIA QUERIES 
+----------------*/
+/* navbar media Query makes navbar responsive */
 @media screen and (max-width: 600px) {
     .topnav  a {display: none;}
     .topnav a.icon {
@@ -157,49 +154,40 @@ makes navbar responsive
       text-align: center;
     }
 }
-/* 
 
-360x740 is mobile width
-414x736 is largest mobile width for android
-tablet 768 - 850 
-----------------------------------------*/
-@media screen and (max-width: 360px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 
 }
-/* tablet media quaries
------------------------*/
-@media screen and (max-width: 767px) {
-    .introSection figure img{
-        width: 100%;
-        height: 450px;
-        filter: grayscale(70%);
-        margin: 0%;
-    }
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    h2, h3 {
-        max-width: 100%;
-        text-align: left;
-        margin: 1%;
-    }
-    footer {
-    text-align: center;    
-    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     footer ul {
-        width: 100%;
-        padding: 1% 0 0 0;
+        display: inline-flex;
+        padding: 0%;
+        margin: 0;
+        width: 45%;
+        /* border: solid; */
     }
+    footer li {
+        width: 100px;
+        padding: 1%;
+    }
+    .float {
+        padding-left: 4%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) { 
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
    
 }
-/* tablet */
-@media screen and (min-width: 768px) and (max-width:1023px) {
+@media only screen and (min-width: 1400px) {
     
 }
-/* desktop */
-@media screen and (min-width: 1024px) {
-
-}
-

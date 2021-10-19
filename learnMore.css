@@ -1,9 +1,8 @@
 /*/// INTRO SECTION ///*/
 /* .introSection {
-    overflow: hidden;
-    height: 550px;
-}
-.introSection figure img{
+    margin: 0%;
+} */
+/* .introSection figure img{
     width: 100%;
     height: 550px;
     filter: grayscale(70%);
@@ -11,8 +10,9 @@
 /*/// FOLLOWING CSS PLACES DETAILS
 ON TOP OF THE IMAGE ///*/
 #mainTitle{
-    background-color: rgba(32, 32, 32, 0.192);
+    /* background-color: rgba(32, 32, 32, 0.192); */
     width: 30%;
+    height: auto;
     font-size: 50px;
     color: #ffc800;
     position: relative;
@@ -34,6 +34,7 @@ ON TOP OF THE IMAGE ///*/
 /* /// ADVOCACY CAMPAIGNS SECTION /// */
 h1 {
     color: rgb(0, 0, 0);
+    padding: 5% 3%;
 }
 .advocacyCampaigns { /* ROW */
     padding: 0 5%;
@@ -89,7 +90,7 @@ h1 {
 }
 .story img, figcaption{
     width: 80%;
-    height: 80%;
+    height: 70%;
     margin: 0%;
 }
 figcaption a {
@@ -106,20 +107,6 @@ figcaption a:hover {
 
 
 
-
-/* .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.banner figure img{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 30em;
-} */
-
 span {
     color: red;
 }
@@ -130,63 +117,199 @@ span {
     margin-bottom: 5em;
 }
 
-/* START MEDIA QUERIES
-   mobile queries
--------------------- */
-@media screen and (max-width: 767px) {
-    
-    #mainTitle{ /* place above image */
-        width: 50%;
-        font-size: 30px;
-        left: 5em;
-        bottom: 6.5em;
-    }
-    .subtitle{ /* place above image */
-        width: 50%;
-        font-size: 18px;
-        color: white;
-        position: relative;
-        left: 10em;
-        bottom: 11em;
-    }
-    h2{
-        font-size: 20px;
-    }
-    /* other campaigns section
-    ------------------------ */
-    .advocacyCampaigns {
-        background-color: rgba(226, 229, 38, 0.48);
-        padding: 5%;
-        flex-direction: column;
-        /* border-top: solid; */
-    }
-    .advocacyCampaigns img{
-        /* flex: 25%; */
-        width: 100%;
-        margin: 0%;
 
+
+
+
+/* MEDIA QUERIES 
+---------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #mainTitle {
+        width: 60%;
+        font-size: 140%;
+        position: relative;
+        bottom: 240px;
+        left: 39%;
     }
-    .column { /* image column */
+    .subtitle {
+        width: 45%;
+        font-size: 70%;
+        bottom: 270px;
+        left: 47%;
+    }
+    figure {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .advocacyCampaigns {
+        width: 100%;
+        padding:  10% 0;
+        /* margin: 0%; */
+    }
+    .column {
+        width: 100%;
+    }
+    .latestNews {
+        width: 100%;
+        /* padding: 5% 10%; */
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .story {
+        width: 60%;
+        margin: auto;
+        padding: 0 0 5% 10%;
+    }
+}
+
+  @media only screen and (min-width: 600px) {
+    p {
+        padding: 3%;
+    }
+    figure {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    #mainTitle {
+        width: 50%;
+        font-size: 200%;
+        bottom: 250px;
+        left: 37%;
+    }
+    .subtitle {
+        width: 50%;
+        font-size: 120%;
+        bottom: 290px;
+        left: 45%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .column{
+       width: 95%;  
+    } 
+   
+    .story {
         /* border: solid; */
+        width: 80%;
+        /* height: 250px; */
+        margin: auto;
+        padding: 0 0 5% 25%;
+        /* float: left; */
+        /* padding: 5% 10%; */
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 768px) { 
+    #mainTitle {
+        width: 50%;
+        font-size: 250%;
+        bottom: 260px;
+        left: 37%;
+    }
+    .subtitle {
+        width: 50%;
+        font-size: 150%;
+        bottom: 310px;
+        left: 45%;
+    }
+    .column img{
+        margin-top: 10%;
+        margin-left: 5%;
         width: 85%;
     }
-    /* LATEST NEWS 
-    ------------ */
-.latestNews { 
-    background-color: rgba(255, 184, 2, 0.62);
-    padding: 5%;
-
+    .row {        
+        display: block;
+        padding: 0 10%;
+    }
+    .story {
+        width: 45%;
+        float: left;
+        padding:  3% 2%;
+        font-size: 14px;
+    }
+    figcaption {
+        font-size: 16px;
+    }
 }
-.row {
-
-    display: inline-flex;
-    padding: 0 2%;
-    margin-left: 2%;
-    width: 90%;
+/* Medium devices (landscape tablets, 944px and up .. 912px is portrait for the surface) */
+@media only screen and (min-width: 944px) {
+    #mainTitle {
+        font-size: 250%;
+        bottom: 270px;
+        left: 40%;
+    }
+    .subtitle {
+        font-size: 150%;
+        bottom: 330px;
+        left: 48%;
+    }
+    .column {
+        width: 43%;
+    }
+    .story {
+        width: 21%;
+        float: left;
+    }
+    div.column {
+        padding: 3% 0 0 0;
+    }
 }
-.story {
-    width: 100%;
-
+/* Large devices (laptops/desktops, tablet landscape 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #mainTitle {
+        width: 32%;
+        font-size: 260%;
+        bottom: 270px;
+        left: 41%;
+    }
+    .subtitle {
+        width: 50%;
+        font-size: 160%;
+        bottom: 340px;
+        left: 49%;
+    }
+    .story {
+        width: 20%;
+        float: left;
+    }
 }
-    
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    #mainTitle {
+        width: 30%;
+        font-size: 280%;
+        bottom: 270px;
+        left: 42%;
+    }
+    .subtitle {
+        width: 35%;
+        font-size: 180%;
+        bottom: 340px;
+        left: 50%;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    #mainTitle {
+        bottom: 330px;
+        left: 44%;
+    }
+    .subtitle {
+        bottom: 425px;
+        left: 52%;
+    }
+    .story {
+        width: 20%;
+        float: left;
+    }
+   
 }

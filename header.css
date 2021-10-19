@@ -61,155 +61,97 @@ nav .icon {
 
 /* MEDIA QUERIES 
 -------------- */
-/* desktop */
-@media screen and (min-width: 1024px) {
-    /* #logo {
-        width: 11%;
-        position: relative;
-        left: 12em;
-        bottom: 3em;
-        transform: rotate(-15deg)
-    }
-    nav {
-        overflow: hidden;
-        position: relative;
+/* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    #wrapper {
         width: 100%;
-        text-align: center;
-        background-color: black;
-        bottom: 70px;
-    }
-    nav a {
-        color: white;
-        font-size: 17px;
-        float: none;
-        display: inline-block;
-        padding: 0px 8%;
-    } */
-  
-    
-    
-}
-/* tablet */
-@media screen and (min-width: 768px) and (max-width:1023px) {
-    #logo {
-        width: 11%;
-        position: relative;
-        left: 9em;
-        bottom: 2em;
-        transform: rotate(-15deg)
     }
     header p {
-        transform: rotate(-3deg); 
-        width: 100%;
-        height: 25px; 
-        font-size: 400%;
-        font-weight: bold;
-        text-align: center;
-        color: blue;
+        font-size: 200%;
+    }
+    #logo {
+        width: 12%;
+        left: 10%;
+        bottom: 1.5em;
     }
     nav {
+        bottom: 45px;
+        display: block;
         overflow: hidden;
-        position: relative;
-        width: 100%;
-        text-align: center;
-        background-color: black;
-        bottom: 39px;
+    }
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    header p {
+        font-size: 250%;
+    }
+    #logo {
+        width: 12%;
+        left: 12%;
+        bottom: 1.9em;
+    }
+    nav {
+        bottom: 45px;
+        display: block;
+        overflow: hidden;
     }
     nav a {
-        color: white;
-        font-size: 17px;
-        float: none;
-        display: inline-block;
-        padding: 0px 8%;
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 0% 6%;
     }
 }
-/* tablet 
-----------*/
-@media screen and (max-width: 767px) { 
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) { 
+  
     #logo {
-        width: 15%;
-        position: relative;
-        float: left;
-        left: 6%;
-        bottom: 2em;
+        width: 11%;
+        left: 5%;
+        bottom: 2.2em;
     }
-    header p { /* subwayaccessability */
-        transform: rotate(-3deg); 
-        width: 100%;
+    header p { 
         padding: 0 15% 0 0;
-        /* height: 100px;  */
-        font-size: 38px;
-        font-weight: bold;
-        color: blue;
-        /* position: relative; */
-        /* right: 25%; */
+        font-size: 300%;
     }
-    
     nav {
         bottom: 50px;
     }
-    
-   
-}
-/*   
--798x332-Galaxy S8+
-landscape View
-------------------*/
-@media screen and (max-width: 799px) {
-    header p {
-        font-size: 46px;
+    nav a {
+        padding: 0% 7%;
     }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     #logo {
-        width: 13%;
-        position: relative;
-        float: left;
-        left: 5%;
-        bottom: 2em;
-    }
-    nav {
-        bottom: 40px;
-    }
-}
-/*  Mobile M view 
--412x718-Galaxy S8+
-Portrait View
-------------------*/
-@media screen and (max-width: 413px) {
-    header p {
-        font-size: 24px;
-    }
-    #logo {
-        width: 14%;
-        position: relative;
-        float: left;
-        left: 5%;
-        bottom: 1.6em;
-    }
-    nav {
-        bottom: 46px;
-    }
-}
-/*  Mobile S view 
------------------*/
-@media screen and (max-width: 320px) {
-    #wrapper {
-        width: 100%;
-        border: solid;
-    }
-    header { 
-       width: 100%;
+        width: 9%;
+        left: 9%;
+        bottom: 2.4em;
     }
     header p {
-        font-size: 20px;
-    }
-    #logo {
-        width: 13%;
-        left: 5%;
-        bottom: 1.6em;
-    }
-    nav {
-        /* width: 50%; */
-        bottom: 45px;
+        font-size: 350%;
     }
 }
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #logo {
+        width: 9%;
+        left: 11%;
+        bottom: 2.1em;
+    }
+    header p {
+        font-size: 400%;
+    }
+    nav a {
+        padding: 0% 9%;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    #logo {
+        width: 9%;
+        left: 12%;
+    }
+    header p {
+        font-size: 450%;
+    }
+}
