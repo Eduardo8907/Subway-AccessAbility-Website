@@ -124,14 +124,14 @@ h2 a:hover {
 figcaption{
     margin: 10 0 10 0;
     font-weight: bold;
-    font-size: 100%;
+    font-size: 90%;
 } 
 
 
 
 
 /* MEDIA QUERIES 
-----------------*/
+----------------------------------------------*/
 /* navbar media Query makes navbar responsive */
 @media screen and (max-width: 600px) {
     .topnav  a {display: none;}
@@ -154,40 +154,38 @@ figcaption{
       text-align: center;
     }
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     footer ul {
         display: inline-flex;
         padding: 0%;
-        margin: 0;
-        width: 45%;
-        /* border: solid; */
+        margin:  3% 1%;
     }
     footer li {
-        width: 100px;
         padding: 1%;
-    }
-    .float {
-        padding-left: 4%;
+        width: 100px;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) { 
-
+    footer ul {
+        margin: 1% 4%;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    footer ul{
+        margin: 1% 9%;
+    }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-   
+    footer ul{
+        margin: 1% 12%;
+    }
 }
 @media only screen and (min-width: 1400px) {
-    
+    footer ul{
+        margin: 1% 13%;
+    }
 }

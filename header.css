@@ -68,14 +68,17 @@ nav .icon {
     }
     header p {
         font-size: 200%;
+        position: relative;
+        right: 3%;
+        top: 10px;
     }
     #logo {
-        width: 12%;
-        left: 10%;
-        bottom: 1.5em;
+        width: 14%;
+        left: 4%;
+        bottom: 28px;
     }
     nav {
-        bottom: 45px;
+        bottom: 25px;
         display: block;
         overflow: hidden;
     }

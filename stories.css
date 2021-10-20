@@ -46,7 +46,6 @@ ON TOP OF THE IMAGE
     background-color: rgba(226, 229, 38, 0.48);
 }
 .videoTestimony p{
-    /* display: flex; */
     width: 45%;
 }
 iframe {
@@ -63,11 +62,6 @@ iframe {
     padding: 0 5% 2% 5%;
     background-color: rgba(255, 184, 2, 0.62);
 }
-.writtenTestimonies p{
-    display: flex;
-    width: 45%;
-    /* margin: 1%; */
-}
 .noFilter { /*// PERSONA IMAGE IN WRITTEN TESTIMONIES //*/
     filter: none;
     width: 50%;
@@ -76,7 +70,6 @@ iframe {
 }
 /*/// END TESTIMONIES CSS ///*/
 
-
 /* OTHER WAYS TO GET INVOLVED 
  JOIN US 
  ----------------------------*/
@@ -84,7 +77,6 @@ iframe {
     margin: 0;
     padding: 5%;
     background-color: rgba(226, 229, 38, 0.48);
-    /* border-top: solid; */
 }
 #join { /* SPAN:JOIN US */
     font-weight: bold;
@@ -113,16 +105,15 @@ button a:hover {
     color: white;
 }
 
-
-
-
-
-
 /* MEDIA QUERIES 
-----------------*/
+-----------------------------------------------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     /* introSection  mobile CSS */
+    .introSection figure{
+        width: 100%;
+        margin: 0%;
+    }
     #mainTitle{ 
         width: 70%;
         font-size: 26px;
@@ -143,7 +134,7 @@ button a:hover {
         bottom: 320px;
     }
     .topButton { /* button in main img */
-        font-size: 17px;
+        font-size: 16px;
         width: 25%;
         height: 10%;
         right: 7%;
@@ -152,18 +143,23 @@ button a:hover {
     .topButton a {
          font-size: 16px;
     }
-    /* .videoTestimonies mobile CSS */
+    /* testimonies */
     .column {
         width: 100%;
-        /* border: solid; */
         padding: 1%;
     }
     .column p {
         width: 100%;
     }
+    /* wrtten testimonies */
+    .writtenTestimonies img {
+        width: 100%;
+        margin: 0%;
+    }
+    /* bottom button */
     #share {
         font-size: 17px;
-        width: 25%;
+        width: 30%;
         height: 10%;
         bottom: 18.1em;
         right: 2.5em;
@@ -174,14 +170,12 @@ button a:hover {
     #mainTitle{
         width: 70%;
         font-size: 30px;
-        /* position: relative; */
         left: 10%;
         bottom: 300px;
     }
     .subtitle{
         width: 55%;
         font-size: 18px;
-        /* position: relative; */
         left: 35%;
         bottom: 320px;
     }
@@ -202,11 +196,14 @@ button a:hover {
     /* testimonies columns */
     .column {
         width: 100%;
-        /* border: solid; */
-        padding: 1%;
     }
     .column p {
         width: 100%;
+    }
+    /* written testimonies */
+    .writtenTestimonies img {
+        width: 100%;
+        margin: 0% ;
     }
     /* Bottom button */
     #share {
@@ -224,12 +221,10 @@ button a:hover {
         font-size: 30px;
         left: 26%;
         bottom: 300px;
-        /* line-height: 100%; */
     }
     .subtitle{ 
         width: 40%;
         font-size: 18px;
-        /* position: relative; */
         left: 43%;
         bottom: 320px;
     }
@@ -245,6 +240,7 @@ button a:hover {
         right: 6%;
         bottom: 410px;
     }
+    /* bottom button */
     #share {
         width: 60%;
         position: relative;
@@ -253,31 +249,36 @@ button a:hover {
     }
     /* testimonies section
     --------------------- */
-    .videoTestimony {
-        padding: 5%;
-    }
     .videoTestimony iframe{
-        /* width: 100%; */
-        margin: 0%;
-        padding-top: 10%;
+        margin: 5% 0;
     }
-    .column { /* image column */
+    .column { 
         width: 40%;
-        padding: 3%;
+        padding: 0 0 0 3%;
     }
     .column p {
         font-size: 16px;
     }
-    .writtenTestimonies .column{
-        width: 100%;
-    }   
-    .videoTestimony h2 {
-        padding:  10% 0 0 0;
-    } 
+    .writtenTestimonies img {
+        float: left;
+        height: 35%;
+        width: 35%;
+        margin: 0% 5%;
+    }  
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     p {
+        font-size: 20px;
+    }
+    .column {
+        width: 45%;
+        margin: 0;
+    }
+    iframe.column {
+        margin: 0%;
+    }
+    .column p{
         font-size: 20px;
     }
     .column img{
@@ -292,7 +293,6 @@ button a:hover {
     .subtitle{ 
         width: 50%;
         font-size: 20px;
-        /* position: relative; */
         left: 45%;
         bottom: 350px;
     }
@@ -305,14 +305,12 @@ button a:hover {
     .topButton {
         width: 18%;
         padding: 0.3% 1%;
-        /* height: 10%; */
         right: 5%;
         bottom: 460px;
+    } 
+    h1 {
+        font-size: 32px;
     }
-    .videoTestimony h2 {
-        padding:  10% 0 0 0;
-    }
-
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -337,14 +335,9 @@ button a:hover {
     .topButton {
         width: 15%;
         padding: 0.3% 1%;
-        /* height: 10%; */
         right: 8%;
         bottom: 470px;
-    }
-    .videoTestimony h2 {
-        /* border: solid; */
-        padding:  10% 0 0 0;
-    }
+    }    
 }
 @media only screen and (min-width: 1400px) {
     #mainTitle{ 
@@ -364,6 +357,15 @@ button a:hover {
         width: 15%;
         right: 8%;
         bottom: 470px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 24px;
+    }
+    .column p{
+        font-size: 24px;
     }
 }
 @media only screen and (min-width: 1500px) {
