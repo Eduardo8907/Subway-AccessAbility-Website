@@ -47,8 +47,7 @@ section {
 h1 {
     padding: 2%;
     margin: 2% 0 0 5%;
-    text-decoration: underline;
-    font-size: 28px;
+    font-size: 24px;
 }
 #missionStatement {
     background-color: rgba(226, 229, 38, 0.48);
@@ -176,16 +175,22 @@ figcaption{
 @media only screen and (min-width: 992px) {
     footer ul{
         margin: 1% 9%;
+         font-size: 18px;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     footer ul{
+       
         margin: 1% 12%;
     }
 }
 @media only screen and (min-width: 1400px) {
     footer ul{
+        font-size: 20px;
         margin: 1% 13%;
     }
+    li {
+        margin: 0 5%
+    };
 }

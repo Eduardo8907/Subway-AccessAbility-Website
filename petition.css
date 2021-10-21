@@ -1,29 +1,18 @@
-/*/// INTRO SECTION ///*/
-/* .introSection {
-    overflow: hidden;
-    height: 500px;
-    border: solid;
-}
-.introSection figure img{
-    width: 100%;
-    height: 500px;
-    filter: grayscale(70%);
-} */
 /*/// FOLLOWING CSS PLACES DETAILS
 ON TOP OF THE IMAGE ///*/
 #mainTitle{
-    background-color: rgba(32, 32, 32, 0.555);
+    background-color: rgba(32, 32, 32, 0.275);
     width: 36.5%;
     height: 30px;
-    font-size: 50px;
+    font-size: 36px;
     color: #ffc800;
     position: relative;
     left: 13.5em;
     bottom: 6em;
 }
 .subtitle{
-    /* background-color: rgba(32, 32, 32, 0.192); */
-    background-color: rgba(32, 32, 32, 0.555);
+    background-color: rgba(32, 32, 32, 0.275);
+    /* background-color: rgba(32, 32, 32, 0.555); */
     width: 15%;
     font-size: 30px;
     color: white;
@@ -55,8 +44,8 @@ ON TOP OF THE IMAGE ///*/
 
 }
 .description {
-    width: 72%;
-    margin-left: 11%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 
@@ -82,98 +71,173 @@ button a:hover {
 }
 
 
-/* START MEDIA QUERIES
-   mobile queries
--------------------- */
-@media screen and (max-width: 767px) {
-    #mainTitle{ /* place above image */
-        width: 60%;
-        font-size: 30px;
-        left: 5em;
-        bottom: 8em;
+
+/* MEDIA QUERIES 
+-------------------------------*/
+/* portrait mode for galaxyS8 */
+@media only screen and (min-width: 400px) {
+    .introSection figure{
+        width: 100%;
+        margin: 0%;
     }
-    .subtitle{ /* place above image */
-        width: 25%;
-        font-size: 18px;
-        left: 10em;
-        bottom: 14em;
+    #mainTitle{
+        width: 75%;
+        font-size: 26px;
+        left: 15%;
+        bottom: 240px;
+    }
+    .subtitle {
+        width: 35%;
+        font-size: 17px;
+        left: 20%;
+        bottom: 250px;
     }
     .topButton {
-        background-color: #ffc800;
+        font-size: 17px;
         width: 20%;
-        height: 30px;
-        position: relative;
-        left: 25em;
-        bottom: 23em;
+        height: 10%;
+        left: 60%;
+        bottom: 320px;
+    }
+    /* description */
+    h1 {
+        margin: 1%;
     }
     button {
         width: 20%;
-        height: 30px;
-        position: relative;
-        left: 25em;
-        background-color: #ffc800;
+        height: 10%;
+        left: 60%;
+    }
+}
+@media only screen and (min-width: 500px) {
+    #mainTitle{
+        width: 75%;
+        font-size: 26px;
+        left: 24%;
+        bottom: 240px;
+    }
+    .subtitle {
+        width: 35%;
+        font-size: 17px;
+        left: 26%;
+        bottom: 260px;
+    }
+    .topButton {
+        font-size: 17px;
+        width: 20%;
+        height: 10%;
+        left: 60%;
+        bottom: 320px;
     }
 }
 
-
-
-
-
-
-@media screen and (max-width: 767px) {
-    
-    #mainTitle{ /* place above image */
-        width: 50%;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #mainTitle{
         font-size: 30px;
-        left: 5em;
-        bottom: 6.5em;
+        width: 75%;
+        left: 28%;
+        bottom: 240px;
     }
-    .subtitle{ /* place above image */
-        width: 50%;
+    .subtitle {
         font-size: 18px;
-        color: white;
-        position: relative;
-        left: 10em;
-        bottom: 11em;
+        left: 30%;
+        bottom: 260px;
     }
-    h2{
+    .topButton {
+        width: 15%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) { 
+    #mainTitle{ 
+        font-size: 30px;
+        left: 30%;
+        bottom: 240px;
+    }
+    .subtitle{ 
+        width: 20%;
+        font-size: 18px;
+        left: 33%;
+        bottom: 260px;
+    }
+    .topButton {
+        width: 15%;
+        left: 60%;
+        bottom: 320px;
+    }
+    /* bottom button */
+    button {
+        width: 15%;
+        left: 70%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    p {
         font-size: 20px;
     }
-    /* other campaigns section
-    ------------------------ */
-    .advocacyCampaigns {
-        background-color: rgba(226, 229, 38, 0.48);
-        padding: 5%;
-        flex-direction: column;
-        /* border-top: solid; */
+    #mainTitle {
+        font-size: 36px;
+        left: 35%;
     }
-    .advocacyCampaigns img{
-        /* flex: 25%; */
-        width: 100%;
-        margin: 0%;
-
+    .subtitle {
+        font-size: 20px;
+        left: 38%;
     }
-    .column { /* image column */
-        /* border: solid; */
-        width: 85%;
+    .topButton {
+        width: 12%;
     }
-    /* LATEST NEWS 
-    ------------ */
-.latestNews { 
-    background-color: rgba(255, 184, 2, 0.62);
-    padding: 5%;
-
 }
-.row {
-
-    display: inline-flex;
-    padding: 0 2%;
-    margin-left: 2%;
-    width: 90%;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    p {
+        font-size: 22px;
+    }
+    #mainTitle {
+        font-size: 36px;
+        left: 35%;
+    }
+    .subtitle {
+        font-size: 26px;
+        left: 38%;
+    }
+    .topButton {
+        left: 55%;
+        width: 12%;
+    }
 }
-.story {
-    width: 100%;
-
+@media only screen and (min-width: 1400px) {
+    p {
+        font-size: 24px;
+    }
+    #mainTitle {
+        width: 29%;
+        /* font-size: 36px; */
+        left: 35%;
+    }
+    .subtitle {
+        font-size: 24px;
+        left: 38%;
+    }
+    .topButton {
+        width: 12%;
+    }
 }
-    
+@media only screen and (min-width: 1500px) {
+    p {
+        font-size: 26px;
+    }
+    #mainTitle {
+        width: 29%;
+        font-size: 38px;
+        left: 40%;
+    }
+    .subtitle {
+        font-size: 26px;
+        left: 41%;
+    }
+    .topButton {
+        width: 10%;
+    }
 }
