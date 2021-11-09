@@ -79,8 +79,6 @@ nav .icon {
     }
     nav {
         bottom: 40px;
-        display: block;
-        overflow: hidden;
     }
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -99,10 +97,10 @@ nav .icon {
         overflow: hidden;
     }
     nav a {
-        float: left;
-        display: block;
-        text-align: center;
-        padding: 0% 6%;
+        /* float: left; */
+        /* display: block; */
+        /* text-align: center; */
+        padding: 0% 6.4%;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -121,7 +119,7 @@ nav .icon {
         bottom: 50px;
     }
     nav a {
-        padding: 0% 7%;
+        padding: 0% 7.7%;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -133,6 +131,9 @@ nav .icon {
     }
     header p {
         font-size: 350%;
+    }
+    nav a {
+        padding: 0% 8.8%;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -146,7 +147,7 @@ nav .icon {
         font-size: 400%;
     }
     nav a {
-        padding: 0% 9%;
+        padding: 0% 9.4%;
     }
 }
 @media only screen and (min-width: 1400px) {
@@ -157,4 +158,20 @@ nav .icon {
     header p {
         font-size: 450%;
     }
+    nav a {
+        padding: 0% 9.9%;
+    }
+}
+/* ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
+@media only screen and (min-width: 1500px) {
+    #logo {
+        width: 9%;
+        left: 9%;
+    }
+    header p {
+        font-size: 550%;
+    }
+    nav a {
+        padding: 0% 10%;
+    } 
 }

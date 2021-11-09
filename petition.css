@@ -1,32 +1,18 @@
 /*/// FOLLOWING CSS PLACES DETAILS
 ON TOP OF THE IMAGE ///*/
-#mainTitle{
+.mainTitle{
     background-color: rgba(32, 32, 32, 0.275);
-    width: 36.5%;
-    height: 30px;
-    font-size: 36px;
+    position: absolute;
     color: #ffc800;
-    position: relative;
-    left: 13.5em;
-    bottom: 6em;
 }
 .subtitle{
     background-color: rgba(32, 32, 32, 0.275);
-    /* background-color: rgba(32, 32, 32, 0.555); */
-    width: 15%;
-    font-size: 30px;
+    position: absolute;
     color: white;
-    position: relative;
-    left: 33em;
-    bottom: 11.3em;
 }
-.topButton { /* button in main img */
-    width: 11%;
-    height: 30px;
-    position: relative;
-    bottom: 25em;
-    left: 79em;
+.topButton { 
     background-color: #ffc800;
+    position: absolute;
 }
 .topButton a {
      color: rgb(0, 43, 170);
@@ -35,26 +21,18 @@ ON TOP OF THE IMAGE ///*/
 }
 /* /// END INTRO SECTION /// */
 
-
+/* petition section */
 #petitionDescription {
-    /* border: solid; */
+    background-color: rgba(226, 229, 38, 0.48);
     margin: 0 0 0% 0;
     padding: 5% 0;
-    background-color: rgba(226, 229, 38, 0.48);
-
 }
 .description {
     width: 80%;
     margin-left: 10%;
 }
-
-
 button {
-    width: 11%;
-    height: 30px;
-    margin-top: 1em;
     position: relative;
-    left: 79em;
     background-color: #ffc800;
 }
 button a {
@@ -70,101 +48,89 @@ button a:hover {
     color: white;
 }
 
-
-
 /* MEDIA QUERIES 
--------------------------------*/
-/* portrait mode for galaxyS8 */
-@media only screen and (min-width: 400px) {
+----------------------------------------------------------------------------*/
+/*  GalaxyS8 Portrait Mode : 412x718 */
+/* @media only screen and (min-width: 400px) {
     .introSection figure{
         width: 100%;
         margin: 0%;
     }
-    #mainTitle{
-        width: 75%;
-        font-size: 26px;
-        left: 15%;
-        bottom: 240px;
+    .mainTitle{
+        width: 85%;
+        font-size: 180%;
+        left:  10%;
+        bottom: 50%;
     }
     .subtitle {
         width: 35%;
-        font-size: 17px;
+        font-size: 110%;
         left: 20%;
-        bottom: 250px;
+        bottom: 45%;
     }
     .topButton {
-        font-size: 17px;
-        width: 20%;
-        height: 10%;
+        width: 18%;
+        height: 8%;
         left: 60%;
-        bottom: 320px;
+        bottom: 45%;
     }
-    /* description */
+    description
     h1 {
         margin: 1%;
     }
     button {
-        width: 20%;
-        height: 10%;
+        width: 18%;
         left: 60%;
     }
-}
+} */
 @media only screen and (min-width: 500px) {
-    #mainTitle{
+    .mainTitle{
         width: 75%;
-        font-size: 26px;
         left: 24%;
-        bottom: 240px;
     }
     .subtitle {
-        width: 35%;
-        font-size: 17px;
+        width: 30%;
         left: 26%;
-        bottom: 260px;
     }
     .topButton {
-        font-size: 17px;
-        width: 20%;
-        height: 10%;
-        left: 60%;
-        bottom: 320px;
+        left: 55%;
+    }
+    button {
+        height: 40px;
     }
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #mainTitle{
-        font-size: 30px;
-        width: 75%;
-        left: 28%;
-        bottom: 240px;
+    .mainTitle{
+        font-size: 200%;
+        /* left: 27%; */
     }
     .subtitle {
-        font-size: 18px;
+        width: 25%;
+        font-size: 120%;
         left: 30%;
-        bottom: 260px;
     }
     .topButton {
-        width: 15%;
+        left: 60%;
     }
 }
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) 
+    GalaxyS8 Landscape Mode : 798x332px 
+    Sureface Portrait Mode : 912x1225px */
 @media screen and (min-width: 768px) { 
-    #mainTitle{ 
-        font-size: 30px;
-        left: 30%;
-        bottom: 240px;
+    .mainTitle{ 
+        font-size: 210%;
+        left: 27%;
     }
     .subtitle{ 
-        width: 20%;
-        font-size: 18px;
-        left: 33%;
-        bottom: 260px;
+        width: 22%;
+        font-size: 130%;
+        left: 32%;
     }
     .topButton {
-        width: 15%;
-        left: 60%;
-        bottom: 320px;
+        width: 14%;
+        left: 55%;
+        height: 7%;
     }
     /* bottom button */
     button {
@@ -177,67 +143,86 @@ button a:hover {
     p {
         font-size: 20px;
     }
-    #mainTitle {
-        font-size: 36px;
-        left: 35%;
+    .mainTitle {
+        width: 50%;
+        font-size: 220%;
+        left: 30%;
     }
     .subtitle {
-        font-size: 20px;
-        left: 38%;
+        font-size: 140%;
+        left: 32%;
     }
     .topButton {
         width: 12%;
+        bottom: 47%;
+        /* left: 54%; */
+    }
+    button {
+        width: 15%;
+        /* height: 40px; */
     }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+    Surface Landscape Mode : 1368x769px */
 @media only screen and (min-width: 1200px) {
     p {
         font-size: 22px;
     }
-    #mainTitle {
-        font-size: 36px;
-        left: 35%;
+    .mainTitle {
+        /* border: solid; */
+        width: 70%;
+        font-size: 230%;
+        left: 34%;
     }
     .subtitle {
-        font-size: 26px;
-        left: 38%;
+        font-size: 150%;
+        left: 36%;
     }
     .topButton {
         left: 55%;
         width: 12%;
+    }
+    button {
+        width: 11%;
     }
 }
 @media only screen and (min-width: 1400px) {
     p {
         font-size: 24px;
     }
-    #mainTitle {
-        width: 29%;
-        /* font-size: 36px; */
+    .mainTitle {
+        width: 50%;
+        font-size: 240%;
         left: 35%;
     }
     .subtitle {
-        font-size: 24px;
-        left: 38%;
+        font-size: 160%;
+        left: 37%;
     }
     .topButton {
-        width: 12%;
+        width: 10%;
     }
 }
+/* ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
 @media only screen and (min-width: 1500px) {
     p {
         font-size: 26px;
     }
-    #mainTitle {
-        width: 29%;
-        font-size: 38px;
-        left: 40%;
+    .mainTitle {
+        width: 50%;
+        font-size: 300%;
+        /* left: 40%; */
     }
     .subtitle {
-        font-size: 26px;
-        left: 41%;
+        font-size: 200%;
+        width: 18%;
+        /* left: 37%; */
+        bottom: 44%;
     }
     .topButton {
+        width: 8%;
+    }
+    button {
         width: 10%;
     }
 }

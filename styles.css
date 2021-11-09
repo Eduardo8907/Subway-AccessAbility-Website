@@ -6,17 +6,16 @@ body {
     line-height: 1.5em;
     background-color: white;
 }
-#wrappper {
+/* #wrappper {
     width: 100%;
     margin: 0 auto;
-}
+} */
 
 /* Intro section on each page
 video and
 -----------------------------*/
 .introSection {
-    overflow: hidden;
-    padding: 0 0 5% 0;
+    position: relative;
 }
 .introSection video{
     width: 100%;
@@ -26,6 +25,14 @@ video and
     width: 100%;
     height: 550px;
     filter: grayscale(70%);
+}
+.mainTitle{
+    color: #ffc800;
+    position: absolute;
+}
+.topButton { /* button in main img */
+    background-color: #ffc800;
+    position: absolute;
 }
 /* CSS for sections 
 ------------------*/
@@ -37,13 +44,7 @@ section {
     overflow: hidden;
     margin: 0;
 }
-.mainTitle{
-    font-size: 50px;
-    color: #ffc800;
-    position: relative;
-    bottom: 6em;
-    left: 10.9em;
-}
+
 h1 {
     padding: 2%;
     margin: 2% 0 0 5%;
@@ -89,20 +90,15 @@ footer {
     font-size: 16px;
 }
 footer ul {
-    /* margin: 0 8% 0 0; */
-    /* display: inline; */
-    /* width: 5%; */
     list-style-type: none;
 }
 footer ul li {
     display: block;
-    /* padding: 0 2%; */
 }       
 footer a {
     color: white;
     text-decoration: none;
 }
-
 li a:hover {
     background-color: yellow;
     color: black;
@@ -111,7 +107,6 @@ li a:hover {
 h2 a {
     text-decoration: none;
     color: blue;
-
 }
 h2 a:hover {
     color: black;

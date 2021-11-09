@@ -133,7 +133,7 @@ button a:hover {
         left: 34%;
         bottom: 320px;
     }
-    .topButton { /* button in main img */
+    .topButton { 
         font-size: 16px;
         width: 25%;
         height: 10%;
