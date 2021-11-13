@@ -1,83 +1,20 @@
-/*FOLLOWING CSS PLACES DETAILS
-ON TOP OF THE IMAGE 
-///////////////////*/
-#mainTitle{
-    background-color: rgba(32, 32, 32, 0.192);
-    font-size: 50px;
-    color: #ffc800;
-    position: relative;
-    bottom: 6em;
-    left: 10.9em;
-}
-.subtitle{
-    background-color: rgba(32, 32, 32, 0.192);
-    font-size: 25px;
-    color: white;
-    position: relative;
-    bottom: 12.5em;
-    left: 26em;
-}
-.sub2{
-    background-color: rgba(32, 32, 32, 0.192);
-    color: white;
-    position: relative;
-    bottom: 13em;
-    left: 27em;
-}
-.topButton { /* button in main img */
-    width: 11%;
-    height: 30px;
-    position: relative;
-    bottom: 24em;
-    right: 8em;
-    background-color: #ffc800;
-}
-.topButton a {
-     color: rgb(0, 43, 170);
-     font-size: 18px;
-     text-decoration: none;
-} 
-/*  /introSection>  */
-
-/*/// TESTIMONIES SECTION CSS ///*/
-/*// VIDEO TESTIMONIES //*/
+/* VIDEO TESTIMONIES
+------------------- */
 .videoTestimony {
-    padding:  5% ;
-    background-color: rgba(226, 229, 38, 0.48);
+    padding: 2%;
 }
-.videoTestimony p{
-    width: 45%;
-}
-iframe {
-    margin-right: 15%;
-    margin-left: 4%;
-}
-.column {
-    float: left;
-    width: 33.33%;
-    margin: 2%;
-}
-/*/// WRITTEN TESTIMONIES ///*/
+/* WRITTEN TESTIMONIES 
+----------------------*/
 .writtenTestimonies {
-    padding: 0 5% 2% 5%;
-    background-color: rgba(255, 184, 2, 0.62);
+    padding: 2%;
 }
 .noFilter { /*// PERSONA IMAGE IN WRITTEN TESTIMONIES //*/
     filter: none;
-    width: 50%;
-    height: 350px;
-    margin: 15% 0 0 25%;
 }
-/*/// END TESTIMONIES CSS ///*/
-
+/* /testimoniesCSS */
 /* OTHER WAYS TO GET INVOLVED 
  JOIN US 
  ----------------------------*/
-.row {
-    margin: 0;
-    padding: 5%;
-    background-color: rgba(226, 229, 38, 0.48);
-}
 #join { /* SPAN:JOIN US */
     font-weight: bold;
     color: red;
@@ -85,41 +22,75 @@ iframe {
 li {
     margin: 1%;
 }
-button {
-    margin-left: 60%;
-    margin-top: 5%;
-    width: 35%;
-    height: 30px;
-    font-size: 18px;
-    background-color: #ffc800;
-}
-button a {
-    text-decoration: none;
-    color: rgb(0, 43, 170);
-}
-button:hover {
-    background-color: rgb(0, 43, 170); 
-    text-decoration: none;
-}
-button a:hover {
-    color: white;
-}
 
 /* MEDIA QUERIES 
 -----------------------------------------------------*/
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    /* introSection  mobile CSS */
+/* Devices smaller the 400px, Mobiles */
+@media only screen and (max-width: 400px) {
+    .introSection figure {
+        margin: 0%;
+    }
+    .mainTitle {
+        width: 40%;
+        font-size: 100%;
+        bottom: 200px;
+    }
+/* video testimonies */
+    iframe {
+        width: 100%;
+    }
+/* written testimonies */
+    .writtenTestimonies img {
+        width: 100%;
+        height: 250px;
+        margin: 0%;
+    }
+}
+/*  GalaxyS8 Portrait Mode : 412x718 */
+@media only screen and (min-width: 400px) {
+    .introSection figure {
+        margin: 0%;
+    }
+    .mainTitle {
+        width: 70%;
+        font-size: 160%;
+        bottom: 200px;
+    }
+    .subtitle{ 
+        width: 76%;
+        font-size: 120%;
+        left: 6%;
+        bottom: 130px;
+    }
+    .sub2{
+        font-size: 17px;
+        width: 25%;
+        bottom: 120px;
+    }
+/* video testimonies */
+    iframe{
+        width: 100%;
+    }
+/* wrtten testimonies */
+    .writtenTestimonies img {
+        width: 100%;
+        margin: 0%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    figure.column {
+        margin: 0%;
+    }
+}
+@media only screen and (min-width: 500px) {
     .introSection figure{
         width: 100%;
         margin: 0%;
     }
-    #mainTitle{ 
+    .mainTitle{ 
         width: 70%;
         font-size: 26px;
         line-height: 100%;
-        left: 15%;
-        bottom: 290px;
     }
     .subtitle{ 
         width: 50%;
@@ -134,16 +105,19 @@ button a:hover {
         bottom: 320px;
     }
     .topButton { 
-        font-size: 16px;
-        width: 25%;
+        width: 30%;
         height: 10%;
-        right: 7%;
-        bottom: 385px;
+        font-size: 16px;
+        right: 9%;
+        bottom: 400px;
     }
     .topButton a {
          font-size: 16px;
     }
-    /* testimonies */
+/* video testimonies */
+    figure.column {
+        width: 75%;
+    }
     .column {
         width: 100%;
         padding: 1%;
@@ -151,23 +125,15 @@ button a:hover {
     .column p {
         width: 100%;
     }
-    /* wrtten testimonies */
+/* wrtten testimonies */
     .writtenTestimonies img {
         width: 100%;
-        margin: 0%;
-    }
-    /* bottom button */
-    #share {
-        font-size: 17px;
-        width: 30%;
-        height: 10%;
-        bottom: 18.1em;
-        right: 2.5em;
+        height: 250px;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    #mainTitle{
+    .mainTitle{
         width: 70%;
         font-size: 30px;
         left: 10%;
@@ -186,6 +152,14 @@ button a:hover {
         left:35%;
         bottom: 330px;
     }
+    button { /* for both bottom and top button */
+        width: 30%;
+        height: 10%;
+        margin: 0 33%;
+        background-color: #ffc800;
+        font-size: 16px;
+        padding: 1%;
+    }
     .topButton { /* button in main img */
         width: 30%;
         height: 10%;
@@ -193,30 +167,27 @@ button a:hover {
         right: 9%;
         bottom: 400px;
     }
-    /* testimonies columns */
+    p {
+        line-height: 30px;
+    }
+/* testimonies columns */
     .column {
         width: 100%;
     }
     .column p {
         width: 100%;
     }
-    /* written testimonies */
+/* written testimonies */
     .writtenTestimonies img {
         width: 100%;
-        margin: 0% ;
+        height: 250px;
     }
-    /* Bottom button */
-    #share {
-        width: 25%;
-        height: 10%;
-        left: 1em;
-        bottom: 2em;
-    }
-   
 }
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) 
+Galaxy S8+ Landscape: 798px X 332px
+Microsoft Surface Portrait: 912px X 1225px */
 @media screen and (min-width: 768px) { 
-    #mainTitle{ 
+    .mainTitle{ 
         width: 55%;
         font-size: 30px;
         left: 26%;
@@ -240,30 +211,22 @@ button a:hover {
         right: 6%;
         bottom: 410px;
     }
-    /* bottom button */
-    #share {
-        width: 60%;
-        position: relative;
-        margin-left: 0;
-        bottom: 0em;
+/* video testimony  */
+    .videoTestimony {
+        margin: 1% 0;
+        padding: 0%;
+        display: flex;
     }
-    /* testimonies section
-    --------------------- */
-    .videoTestimony iframe{
-        margin: 5% 0;
+    .videoTestimony .column {
+        width: 100%;
     }
-    .column { 
-        width: 40%;
-        padding: 0 0 0 3%;
+/* written testimonies */
+    .writtenTestimonies {
+        display: block;
     }
-    .column p {
-        font-size: 16px;
-    }
-    .writtenTestimonies img {
+    figure.column {
+        width: 30%;
         float: left;
-        height: 35%;
-        width: 35%;
-        margin: 0% 5%;
     }  
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -271,20 +234,10 @@ button a:hover {
     p {
         font-size: 20px;
     }
-    .column {
-        width: 45%;
-        margin: 0;
-    }
     iframe.column {
         margin: 0%;
     }
-    .column p{
-        font-size: 20px;
-    }
-    .column img{
-        margin: 0 0 0 25%;
-    }
-    #mainTitle{ 
+    .mainTitle{ 
         width: 50%;
         font-size: 36px;
         left: 26%;
@@ -308,13 +261,11 @@ button a:hover {
         right: 5%;
         bottom: 460px;
     } 
-    h1 {
-        font-size: 32px;
-    }
+
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
-    #mainTitle{ 
+    .mainTitle{ 
         width: 55%;
         font-size: 36px;
         left: 28%;
@@ -337,10 +288,11 @@ button a:hover {
         padding: 0.3% 1%;
         right: 8%;
         bottom: 470px;
-    }    
+    } 
+ 
 }
 @media only screen and (min-width: 1400px) {
-    #mainTitle{ 
+    .mainTitle{ 
         left: 30%;
         bottom: 330px;
     }
@@ -368,8 +320,10 @@ button a:hover {
         font-size: 24px;
     }
 }
+/* Extra large devices (large laptops and desktops, 1500px and up) 
+ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
 @media only screen and (min-width: 1500px) {
-    #mainTitle{
+    .mainTitle{
         left: 35%;
     }
     .subtitle {

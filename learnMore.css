@@ -1,69 +1,15 @@
-/*/// FOLLOWING CSS PLACES DETAILS
-ON TOP OF THE IMAGE ///*/
-#mainTitle{
-    /* background-color: rgba(32, 32, 32, 0.192); */
-    width: 30%;
-    height: auto;
-    font-size: 50px;
-    color: #ffc800;
-    position: relative;
-    left: 12.5em;
-    bottom: 6em;
-}
-.subtitle{
-    background-color: rgba(32, 32, 32, 0.192);
-    width: 35%;
-    font-size: 25px;
-    color: white;
-    position: relative;
-    left: 29.5em;
-    bottom: 12.5em;
-}
-/* /// END INTRO SECTION /// */
-
-
-/* /// ADVOCACY CAMPAIGNS SECTION /// */
+/* ADVOCACY CAMPAIGNS SECTION 
+--------------------------------------------------- */
 h1 {
     color: rgb(0, 0, 0);
-    padding: 5% 3%;
 }
-.advocacyCampaigns { /* ROW */
-    padding: 0 5%;
-    background-color: rgba(226, 229, 38, 0.48);
+.advocacyCampaigns { 
+    padding: 2%;
 }
-.advocacyCampaigns img{
-    width: 60%;
-    height: 60%;
-    margin-left: 20%;
-    margin-bottom: 5%;
-}
-.column { /* image column */
-    float: left;
-    width: 45%;
-    max-height: 50%;
-    margin-left: 8%;
-    margin-right: -25px;
-}
-/* /// END ADVOCACY CAMPAIGN SECTION /// */
-
-/* /// LATEST NEWS /// */
-.latestNews { 
-    padding: 0 3% 3% 3%;
-    border-top: solid;
-    background-color: rgba(255, 184, 2, 0.62);
-}
-.row {
-    margin-bottom: 4%;
-    /* border: solid; */
-    display: inline-flex;
-    padding: 0 2%;
-    margin-left: 2%;
-    width: 90%;
-}
-.story img, figcaption{
-    width: 80%;
-    height: 70%;
-    margin: 0%;
+/*  LATEST NEWS 
+--------------------------------------------------- */
+img, figcaption{
+    width: 100%;
 }
 figcaption a {
     text-decoration: none;
@@ -75,233 +21,178 @@ figcaption a:hover {
     color: rgb(0, 0, 0);
 }
 
-
-
-span {
-    color: red;
-}
-
-
-.petition {
-    margin-left: 50%;
-    margin-bottom: 5em;
-}
-
-
-
-
-
 /* MEDIA QUERIES 
----------------------------- */
-/* portrait mode for galaxyS8 */
-@media only screen and (min-width: 400px) {
+--------------------------------------------------------------------- */
+/* Devices smaller the 400px */
+@media only screen and (max-width: 400px) {
     .introSection figure{
         width: 100%;
         margin: 0%;
     }
-    #mainTitle {
-        width: 100%;
-        font-size: 120%;
-        position: relative;
-        bottom: 240px;
-        left: 32%;
+    .mainTitle {
+        width: 50%;
+        font-size: 100%;
+        bottom: 200px;
     }
     .subtitle {
-        width: 45%;
-        font-size: 70%;
-        bottom: 270px;
-        left: 40%;
+        width: 60%;
+        font-size: 80%;
+        left: 5%;
+        bottom: 120px;
     }
-    /* advocacy campaigns */
-    figure.column {
-        width: 100%;
-        margin: 5% 0;
+/* advocacy campaigns */
+    h1 {
+        font-size: 160%;
     }
-    p {
-        width: 90%;
-    }
-    .column h2 {
-        width: 90%;
-    }
-    .column {
-        width: 100%;
-    }
-    .advocacyCampaigns img {
-        margin: 1%;
-        width: 100%;
-    }
-    /* latest news */
-    .latestNews {
-        width: 95%;
-    }
+/* latest news */
     .row {
         display: flex;
         flex-direction: column;
     }
-    .story {
-        width: 80%;
-        padding: 0 0 0% 10%;
+
+}
+/*  GalaxyS8 Portrait Mode : 412x718 */
+@media only screen and (min-width: 400px) {
+    .mainTitle {
+        width: 70%;
+        font-size: 160%;
+        bottom: 200px;
     }
-    figcaption {
-        font-size: 14px;
-        font-weight: normal;
+    .subtitle {
+        width: 76%;
+        font-size: 120%;
+        padding: 1%;
+        left: 7%;
+        bottom: 125px;
+    }
+/* advocacy campaigns */
+/* latest news */
+    .row {
+        display: flex;
+        flex-direction: column;
     }
 }
-
-  @media only screen and (min-width: 600px) {
-    figure {
-        width: 100%;
-        padding: 0%;
+@media only screen and (max-width: 500px) {
+    figure.column {
         margin: 0%;
     }
-    #mainTitle {
+}
+@media only screen and (min-width: 500px) {
+    #mainTitle{
         width: 50%;
-        font-size: 200%;
-        bottom: 250px;
-        left: 37%;
     }
     .subtitle {
-        width: 50%;
-        font-size: 120%;
-        bottom: 290px;
-        left: 45%;
+        width: 65%;
     }
-    .row {
-        display: flex;
-        flex-direction: column;
-    }
-    .column{
-       width: 95%;  
-    } 
     figcaption {
-        font-size: 14px;
-    }
-    .story {
-        width: 80%;
-        margin: auto;
-        padding: 0 0 5% 25%;
+        font-size: 16px;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 768px) { 
-    #mainTitle {
+@media only screen and (min-width: 600px) {
+    .mainTitle {
         width: 50%;
-        font-size: 250%;
-        bottom: 260px;
-        left: 37%;
+        font-size: 160%;
     }
     .subtitle {
         width: 50%;
-        font-size: 150%;
-        bottom: 310px;
-        left: 45%;
+        font-size: 120%;
     }
-    /* advocacy campaigns */
+    p {
+        line-height: 30px;
+    }
+    .row {        
+        display: block;
+    }
+    .story {
+        width: 30%;
+        float: left;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) 
+Galaxy S8+ Landscape: 798px X 332px
+Microsoft Surface Portrait: 912px X 1225px */
+@media screen and (min-width: 768px) { 
+    .mainTitle {
+        width: 35%;
+        font-size: 170%;
+        bottom: 205px;
+    }
+    .subtitle {
+        width: 45%;
+        font-size: 120%;
+
+    }
+/* advocacy campaigns */
     .advocacyCampaigns {
         display: flex;
     }
-    p {
-        font-size: 16px;
+    .column  {
+        width: 50%;
     }
-    /* latest news */
-    .row {        
-        display: block;
-        padding: 0 10%;
-    }
+/* latest news */
     .story {
-        width: 45%;
-        float: left;
-        padding:  3% 2%;
-        font-size: 14px;
-    }
-    figcaption {
-        font-size: 14px;
+        width: 35%;
     }
 }
 /* Medium devices (landscape tablets, 944px and up .. 912px is portrait for the surface) */
 @media only screen and (min-width: 944px) {
-    #mainTitle {
-        font-size: 250%;
-        bottom: 270px;
-        left: 40%;
+    .mainTitle {
+        width: 35%;
+        font-size: 200%;
+        bottom: 210px;
     }
     .subtitle {
-        font-size: 150%;
-        bottom: 330px;
-        left: 48%;
+        width: 40%;
+        font-size: 130%;
     }
-    /* -----campaign----- */
+/* -----campaign----- */
+    p {
+        font-size: 18px;
+    }
+/* -----latest news----- */
+    .story {
+        width: 35%;
+    }
+}
+/* Microsoft Surface Landscape: 1368px X 769px */
+@media only screen and (min-width: 1200px) {
+    .mainTitle {
+        width: 32%;
+        font-size: 220%;
+        bottom: 215px;
+    }
+    .subtitle {
+        width: 35%;
+        font-size: 140%;
+    }
     p {
         font-size: 20px;
     }
-    /* -----latest news----- */
-    .row {
-        margin: 0%;
-    }
     .story {
-        width: 21%;
-        /* height:100%; */
-        float: left;
-    }
-    figcaption {
-        font-size: 18px;
+        width: 16%;
     }
 }
-/* Large devices (laptops/desktops, tablet landscape 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    #mainTitle {
-        width: 32%;
-        font-size: 260%;
-        bottom: 270px;
-        left: 41%;
-    }
-    .subtitle {
-        width: 50%;
-        font-size: 160%;
-        bottom: 340px;
-        left: 49%;
-    }
-    .story {
-        width: 20%;
-        float: left;
-    }
-}
-/* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
-    #mainTitle {
+    .mainTitle {
         width: 30%;
         font-size: 280%;
-        bottom: 270px;
-        left: 42%;
     }
     .subtitle {
         width: 35%;
         font-size: 180%;
-        bottom: 340px;
-        left: 50%;
     }
     h1 {
-        font-size: 32px;
-    }
-    p {
-        font-size: 24px;
-    }
-    figcaption {
-        font-size: 20px;
-    }
-}
-@media only screen and (min-width: 1500px) {
-    #mainTitle {
-        bottom: 330px;
-        left: 44%;
-    }
-    .subtitle {
-        bottom: 425px;
-        left: 52%;
+        font-size: 180%;
     }
     .story {
-        width: 20%;
-        float: left;
+        width: 17%;
     }
-   
+}
+/* Extra large devices (large laptops and desktops, 1500px and up) 
+ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
+@media only screen and (min-width: 1500px) {
+    .story {
+        width: 18%;
+    }
 }

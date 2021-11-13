@@ -1,11 +1,15 @@
 /* MEDIA QUERIES 
 ----------------*/
+/* Devices smaller the 400px */
+@media only screen and (max-width: 400px) {
+
+}
 /*  GalaxyS8 Portrait Mode : 412x718 */
 @media only screen and (min-width: 400px) {
 
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/*  */
+@media only screen and (min-width: 500px) {
 
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -13,24 +17,25 @@
 
 }
 /* Medium devices (landscape tablets, 768px and up) 
-    GalaxyS8 Landscape Mode : 798x332px 
-    Sureface Portrait Mode : 912x1225px */
+Galaxy S8+ Landscape: 798px X 332px
+Microsoft Surface Portrait: 912px X 1225px */
 @media screen and (min-width: 768px) { 
 
 }
-/* Large devices (laptops/desktops, 992px and up) */
+/*  */
 @media only screen and (min-width: 992px) {
 
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) 
-    Surface Landscape Mode : 1368x769px */
+/* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
    
 }
+/*  */
 @media only screen and (min-width: 1400px) {
     
 }
-/* ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
+/* Extra large devices (large laptops and desktops, 1500px and up) 
+ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
 @media only screen and (min-width: 1500px) {
     
 }
