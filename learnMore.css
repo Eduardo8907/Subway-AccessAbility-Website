@@ -1,16 +1,11 @@
 /* ADVOCACY CAMPAIGNS SECTION 
 --------------------------------------------------- */
-h1 {
-    color: rgb(0, 0, 0);
-}
 .advocacyCampaigns { 
     padding: 2%;
 }
 /*  LATEST NEWS 
 --------------------------------------------------- */
-img, figcaption{
-    width: 100%;
-}
+
 figcaption a {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,45 +20,37 @@ figcaption a:hover {
 --------------------------------------------------------------------- */
 /* Devices smaller the 400px */
 @media only screen and (max-width: 400px) {
-    .introSection figure{
-        width: 100%;
-        margin: 0%;
-    }
     .mainTitle {
         width: 50%;
-        font-size: 100%;
-        bottom: 200px;
+        font-size: 110%;
+        left: 5%;
+        bottom: 150px;
     }
     .subtitle {
-        width: 60%;
+        width: 50%;
         font-size: 80%;
         left: 5%;
-        bottom: 120px;
-    }
-/* advocacy campaigns */
-    h1 {
-        font-size: 160%;
+        bottom: 80px;
     }
 /* latest news */
     .row {
         display: flex;
         flex-direction: column;
     }
-
 }
 /*  GalaxyS8 Portrait Mode : 412x718 */
 @media only screen and (min-width: 400px) {
     .mainTitle {
-        width: 70%;
+        width: 60%;
         font-size: 160%;
-        bottom: 200px;
+        left: 5%;
+        bottom: 50%;
     }
     .subtitle {
-        width: 76%;
-        font-size: 120%;
-        padding: 1%;
-        left: 7%;
-        bottom: 125px;
+        width: 50%;
+        font-size: 80%;
+        left: 5%;
+        bottom: 35%;
     }
 /* advocacy campaigns */
 /* latest news */
@@ -78,11 +65,14 @@ figcaption a:hover {
     }
 }
 @media only screen and (min-width: 500px) {
-    #mainTitle{
+    .mainTitle {
         width: 50%;
+        font-size: 170%;
     }
     .subtitle {
-        width: 65%;
+        width: 50%;
+        font-size: 100%;
+        bottom: 38%;
     }
     figcaption {
         font-size: 16px;
@@ -91,15 +81,17 @@ figcaption a:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .mainTitle {
-        width: 50%;
-        font-size: 160%;
+        width: 45%;
+        padding: 0.5% ;
+        font-size: 175%;
+        left: 15%;
     }
     .subtitle {
-        width: 50%;
+        width: 45%;
+        padding: 0.5% ;
         font-size: 120%;
-    }
-    p {
-        line-height: 30px;
+        left: 15%;
+        bottom: 35%;
     }
     .row {        
         display: block;
@@ -115,13 +107,15 @@ Microsoft Surface Portrait: 912px X 1225px */
 @media screen and (min-width: 768px) { 
     .mainTitle {
         width: 35%;
-        font-size: 170%;
-        bottom: 205px;
+        left: 20%;
+        /* font-size: 170%; */
+        /* bottom: 205px; */
     }
     .subtitle {
-        width: 45%;
-        font-size: 120%;
-
+        width: 35%;
+        left: 20%;
+        /* font-size: 120%; */
+        /* bottom: 35%; */
     }
 /* advocacy campaigns */
     .advocacyCampaigns {
@@ -136,19 +130,17 @@ Microsoft Surface Portrait: 912px X 1225px */
     }
 }
 /* Medium devices (landscape tablets, 944px and up .. 912px is portrait for the surface) */
-@media only screen and (min-width: 944px) {
+@media only screen and (min-width: 992px) {
     .mainTitle {
-        width: 35%;
+        width: 30%;
         font-size: 200%;
-        bottom: 210px;
+        left: 25%;
+        /* bottom: 210px; */
     }
     .subtitle {
-        width: 40%;
+        width: 30%;
         font-size: 130%;
-    }
-/* -----campaign----- */
-    p {
-        font-size: 18px;
+        left: 25%;
     }
 /* -----latest news----- */
     .story {
@@ -158,16 +150,16 @@ Microsoft Surface Portrait: 912px X 1225px */
 /* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
     .mainTitle {
-        width: 32%;
+        width: 28%;
+        /* height: 8%; */
+        /* padding: 1%; */
         font-size: 220%;
-        bottom: 215px;
+        /* bottom: 215px; */
     }
     .subtitle {
-        width: 35%;
+        width: 28%;
         font-size: 140%;
-    }
-    p {
-        font-size: 20px;
+        bottom: 33%;
     }
     .story {
         width: 16%;
@@ -175,15 +167,13 @@ Microsoft Surface Portrait: 912px X 1225px */
 }
 @media only screen and (min-width: 1400px) {
     .mainTitle {
-        width: 30%;
-        font-size: 280%;
+        width: 22%;
+        /* font-size: 190%; */
     }
     .subtitle {
-        width: 35%;
-        font-size: 180%;
-    }
-    h1 {
-        font-size: 180%;
+        width: 28%;
+        /* font-size: 180%; */
+        bottom: 33%;
     }
     .story {
         width: 17%;
@@ -192,6 +182,11 @@ Microsoft Surface Portrait: 912px X 1225px */
 /* Extra large devices (large laptops and desktops, 1500px and up) 
 ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
 @media only screen and (min-width: 1500px) {
+    .subtitle {
+        width: 25%;
+        /* font-size: 180%; */
+        bottom: 33%;
+    }
     .story {
         width: 18%;
     }

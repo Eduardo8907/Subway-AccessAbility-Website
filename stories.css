@@ -27,13 +27,38 @@ li {
 -----------------------------------------------------*/
 /* Devices smaller the 400px, Mobiles */
 @media only screen and (max-width: 400px) {
-    .introSection figure {
-        margin: 0%;
-    }
     .mainTitle {
-        width: 40%;
-        font-size: 100%;
-        bottom: 200px;
+        width: 50%;
+        font-size: 110%;
+        left: 10%;
+        bottom: 50%;
+    }
+    .subtitle {
+        width: 50%;
+        font-size: 80%;
+        left: 10%;
+        bottom: 30%;
+    }
+    .sub2 {
+        font-size: 80%;
+        left: 10%;
+        bottom: 20%;
+    }
+    .topButton {
+        position: absolute;
+        text-decoration: none;
+        width: 19%;
+        /* font-size: 14px; */
+        /* height: 20%; */
+        left: 30%;
+        bottom: 45%;
+    }
+    button { /* CSS for both bottom and top button */
+        width: 30%;
+        margin: 0 40%; /* This centers the button*/ 
+        background-color: #ffc800;
+        color: black;
+        font-size: 14px;
     }
 /* video testimonies */
     iframe {
@@ -48,24 +73,39 @@ li {
 }
 /*  GalaxyS8 Portrait Mode : 412x718 */
 @media only screen and (min-width: 400px) {
-    .introSection figure {
-        margin: 0%;
-    }
     .mainTitle {
-        width: 70%;
-        font-size: 160%;
-        bottom: 200px;
+        width: 50%;
+        font-size: 120%;
+        left: 10%;
+        bottom: 50%;
     }
     .subtitle{ 
-        width: 76%;
-        font-size: 120%;
-        left: 6%;
-        bottom: 130px;
+        width: 50%;
+        font-size: 90%;
+        left: 10%;
+        bottom: 33%;
     }
     .sub2{
-        font-size: 17px;
+        font-size: 90%;
         width: 25%;
-        bottom: 120px;
+        left: 10%;
+        bottom: 23%;
+    }
+    .topButton {
+        position: absolute;
+        text-decoration: none;
+        width: 19%;
+        /* font-size: 15px; */
+        height: 25%;
+        left: 30%;
+        bottom: 45%;
+    }
+    button { /* CSS for both bottom and top button */
+        width: 40%;
+        margin: 0 33%;
+        background-color: #ffc800;
+        color: black;
+        font-size: 15px;
     }
 /* video testimonies */
     iframe{
@@ -87,29 +127,30 @@ li {
         width: 100%;
         margin: 0%;
     }
-    .mainTitle{ 
-        width: 70%;
-        font-size: 26px;
-        line-height: 100%;
+    .mainTitle {
+        width: 75%;
+        font-size: 170%;
+    }
+    .subtitle , .sub2 {
+        font-size: 120%;
+        left: 10%;
     }
     .subtitle{ 
-        width: 50%;
-        font-size: 17px;
-        left: 34%;
-        bottom: 310px;
+        width: 65%;
+        bottom: 43%;
     }
     .sub2{
-        font-size: 17px;
         width: 25%;
-        left: 34%;
-        bottom: 320px;
+        bottom: 35%;
     }
-    .topButton { 
-        width: 30%;
-        height: 10%;
-        font-size: 16px;
-        right: 9%;
-        bottom: 400px;
+    .topButton {
+        width: 20%;
+        height: 15%;
+        left: 20%;
+        bottom: 25%;
+    }
+    button { 
+        width: 28%;
     }
     .topButton a {
          font-size: 16px;
@@ -134,41 +175,31 @@ li {
 /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     .mainTitle{
-        width: 70%;
-        font-size: 30px;
-        left: 10%;
-        bottom: 300px;
+        width: 65%;
+        font-size: 175%;
+        left: 20%;
+    }
+    .subtitle , .sub2 {
+        font-size: 125%;
+        left: 20%;
     }
     .subtitle{
-        width: 55%;
-        font-size: 18px;
-        left: 35%;
-        bottom: 320px;
+        width: 60%;
+        bottom: 43%;
     }
     .sub2{
+        width: 13%;
+        bottom: 35%;
+    }
+    .topButton {
+        width: 15%;
+        height: 10%;
+        left: 20%;
+        bottom: 33%;
+    }
+    button {
+        margin: 0 40%;
         width: 20%;
-        font-size: 18px;
-        position: relative;
-        left:35%;
-        bottom: 330px;
-    }
-    button { /* for both bottom and top button */
-        width: 30%;
-        height: 10%;
-        margin: 0 33%;
-        background-color: #ffc800;
-        font-size: 16px;
-        padding: 1%;
-    }
-    .topButton { /* button in main img */
-        width: 30%;
-        height: 10%;
-        font-size: 16px;
-        right: 9%;
-        bottom: 400px;
-    }
-    p {
-        line-height: 30px;
     }
 /* testimonies columns */
     .column {
@@ -187,29 +218,16 @@ li {
 Galaxy S8+ Landscape: 798px X 332px
 Microsoft Surface Portrait: 912px X 1225px */
 @media screen and (min-width: 768px) { 
-    .mainTitle{ 
-        width: 55%;
-        font-size: 30px;
-        left: 26%;
-        bottom: 300px;
-    }
-    .subtitle{ 
-        width: 40%;
-        font-size: 18px;
-        left: 43%;
-        bottom: 320px;
-    }
-    .sub2 {
-        width: 19%;
-        font-size: 18px;
-        left: 43%;
-        bottom: 330px;
-    }
     .topButton {
-        width: 21%;
+        /* font-size: 17px; */
+        width: 15%;
         height: 10%;
-        right: 6%;
-        bottom: 410px;
+        /* left: 20%; */
+        /* bottom: 25%; */
+    }
+    button {
+        width: 15%;
+        font-size: 17px;
     }
 /* video testimony  */
     .videoTestimony {
@@ -231,111 +249,63 @@ Microsoft Surface Portrait: 912px X 1225px */
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    p {
-        font-size: 20px;
-    }
     iframe.column {
         margin: 0%;
     }
+    .subtitle , .sub2 {
+        left: 30%;
+    }
     .mainTitle{ 
         width: 50%;
-        font-size: 36px;
-        left: 26%;
-        bottom: 320px;
+        font-size: 180%;
+        left: 30%;
     }
     .subtitle{ 
         width: 50%;
-        font-size: 20px;
-        left: 45%;
-        bottom: 350px;
     }
     .sub2 {
         width: 19%;
-        font-size: 20px;
-        left: 45%;
-        bottom: 360px;
     }
     .topButton {
-        width: 18%;
-        padding: 0.3% 1%;
-        right: 5%;
-        bottom: 460px;
-    } 
-
+        /* font-size: 17px; */
+        width: 13%;
+        height: 10%;
+        /* left: 20%; */
+        /* bottom: 25%; */
+    }
 }
 /* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
-    .mainTitle{ 
-        width: 55%;
-        font-size: 36px;
-        left: 28%;
-        bottom: 320px;
-    }
-    .subtitle{ 
-        width: 50%;
-        font-size: 26px;
-        left: 39%;
-        bottom: 350px;
-    }
-    .sub2 {
-        width: 19%;
-        font-size: 26px;
-        left: 39%;
-        bottom: 360px;
-    }
     .topButton {
-        width: 15%;
-        padding: 0.3% 1%;
-        right: 8%;
-        bottom: 470px;
-    } 
- 
+        /* font-size: 17px; */
+        width: 10%;
+        height: 10%;
+        /* left: 20%; */
+        /* bottom: 25%; */
+    }
+    button {
+        width: 12%;
+    }
 }
 @media only screen and (min-width: 1400px) {
     .mainTitle{ 
-        left: 30%;
-        bottom: 330px;
+        font-size: 190%;
+
     }
-    .subtitle{ 
-        width: 40%;
-        left: 40%;
-        bottom: 13.5em;
-    }
-    .sub2 {
-        left: 40%;
-        bottom: 13.5em;
-    }
-    .topButton {
-        width: 15%;
-        right: 8%;
-        bottom: 470px;
-    }
-    h1 {
-        font-size: 36px;
-    }
-    p {
-        font-size: 24px;
-    }
-    .column p{
-        font-size: 24px;
-    }
+
+
 }
 /* Extra large devices (large laptops and desktops, 1500px and up) 
 ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
 @media only screen and (min-width: 1500px) {
-    .mainTitle{
-        left: 35%;
-    }
-    .subtitle {
-        left: 45%;
-        bottom: 370px;
-    }
-    .sub2 {
-        left: 45%;
-        bottom: 370px;
-    }
     .topButton {
-        right: 8%;
-        bottom: 515px;
+        /* font-size: 17px; */
+        width: 8%;
+        height: 10%;
+        /* left: 20%; */
+        /* bottom: 25%; */
+    }
+    button {
+        width: 10%;
     }
 }

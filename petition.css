@@ -10,127 +10,209 @@
 -----------------------------------------------------*/
 /* Devices smaller the 400px */
 @media only screen and (max-width: 400px) {
-    button{
-        width: 25%;
+    .mainTitle {
+        width: 50%;
+        font-size: 110%;
+        /* left: 10%; */
+        bottom: 50%;
     }
+    .subtitle {
+        width: 50%;
+        /* font-size: 80%; */
+        /* left: 10%; */
+        bottom: 30%;
+    }
+    .topButton {
+        position: absolute;
+        text-decoration: none;
+        width: 19%;
+        /* font-size: 14px; */
+        /* height: 20%; */
+        left: 30%;
+        bottom: 45%;
+    }
+    button { 
+        width: 23%; 
+        margin: 0 40%; /* This centers the buttons*/ 
+        background-color: #ffc800;
+        /* color: black; */
+        font-size: 14px;
+    }
+
 }
 /*  GalaxyS8 Portrait Mode : 412x718 */
 @media only screen and (min-width: 400px) {
-
     .mainTitle {
-        width: 70%;
-        font-size: 160%;
-        padding: 2%;
-        bottom: 200px;
+        width: 50%;
+        font-size: 120%;
+        /* left: 10%; */
+        bottom: 50%;
     }
     .subtitle {
-        width: 76%;
-        font-size: 120%;
-        padding: 1%;
-        left: 5%;
-        bottom: 130px;
+        width: 35%;
+        /* font-size: 90%; */
+        /* left: 10%; */
+        bottom: 35%;
     }
-
     .topButton {
-        bottom: 100px;
+        position: absolute;
+        text-decoration: none;
+        width: 19%;
+        /* font-size: 15px; */
+        /* height: 25%; */
+        left: 20%;
+        bottom: 45%;
+    }
+    button { 
+        margin: 0 40%; /* This centers the buttons*/ 
+        background-color: #ffc800;
+        width: 20%; 
+        font-size: 15px;
+        padding: 2%;
+        /* color: black; */
     }
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .mainTitle{
-        width: 75%;
-        left: 24%;
+@media only screen and (min-width: 500px) {
+    .mainTitle {
+        width: 70%;
+        font-size: 170%;
     }
     .subtitle {
-        width: 30%;
-        left: 26%;
+        width: 40%;
+        /* font-size: 120%; */
+        bottom: 40%;
+    }
+    .topButton {
+        width: 20%;
+        /* height: 13%; */
+        left: 20%;
+        bottom: 35%;
+    }
+    button { 
+        margin: 0 37%; /* This centers the buttons*/ 
+        width: 25%; 
+        font-size: 15px;
+        padding: 2%;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .mainTitle{
-        font-size: 200%;
+    .mainTitle {
+        /* width: 65%; */
+        font-size: 175%;
+        /* left: 20%; */
     }
     .subtitle {
-        width: 25%;
-        font-size: 120%;
-        left: 30%;
+        width: 35%;
+        /* font-size: 125%; */
+        /* left: 20%; */
     }
+    .topButton {
+        width: 17%;
+        height: 10%;
+        padding: 0%;
+        left: 20%;
+        /* bottom: 35%; */
+    }
+    /* button { 
+        width: 25%; 
+        font-size: 16px;
+        padding: 2%;
+    } */
 }
 /* Medium devices (landscape tablets, 768px and up) 
     GalaxyS8 Landscape Mode : 798x332px 
     Sureface Portrait Mode : 912x1225px */
 @media screen and (min-width: 768px) { 
-    .mainTitle{ 
-        font-size: 210%;
-        left: 27%;
+    .mainTitle {
+        width: 50%;
+        font-size: 180%;
     }
     .subtitle{ 
-        width: 22%;
-        font-size: 130%;
-        left: 32%;
+        width: 25%;
+    }
+    .topButton {
+        width: 13%;
+        padding: 0%;
+        /* height: 10%; */
+        /* left: 20%; */
+        /* bottom: 35%; */
+    }
+    button {
+        font-size: 17px;
+        margin: 0 40%; /* This centers the buttons*/ 
+        width: 17%;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    p {
-        font-size: 20px;
-    }
     .mainTitle {
         width: 50%;
-        font-size: 220%;
-        left: 30%;
+        font-size: 180%;
+        /* left: 30%; */
     }
     .subtitle {
-        font-size: 140%;
-        left: 32%;
+        width: 20%;
+        /* left: 30%; */
+    }
+    .topButton {
+        width: 9%;
+    }
+    button {
+        width: 14%;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) 
     Surface Landscape Mode : 1368x769px */
 @media only screen and (min-width: 1200px) {
-    p {
-        font-size: 22px;
-    }
     .mainTitle {
-        /* border: solid; */
-        width: 70%;
-        font-size: 230%;
-        left: 34%;
+        font-size: 200%;
+        width: 35%; 
     }
     .subtitle {
-        font-size: 150%;
-        left: 36%;
+        width: 17%;
+    }
+    .topButton {
+        /* width: 9%; */
+    }
+    button {
+        width: 12%;
+        height: 50px;
+        padding: 0%;
     }
 }
 @media only screen and (min-width: 1400px) {
-    p {
-        font-size: 24px;
-    }
     .mainTitle {
-        width: 50%;
-        font-size: 240%;
-        left: 35%;
+        width: 30%;
+        /* font-size: 200%; */
+        /* left: 35%; */
     }
     .subtitle {
-        font-size: 160%;
-        left: 37%;
+        width: 15%;
+        /* font-size: 160%; */
+        /* left: 37%; */
     }
-
+    .topButton {
+        width: 8%;
+        /* height: 10%; */
+        /* left: 20%; */
+        /* bottom: 35%; */
+    }
+    button {
+        width: 11%;
+    }
 }
 /* ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
 @media only screen and (min-width: 1500px) {
-    p {
-        font-size: 26px;
-    }
     .mainTitle {
-        width: 50%;
-        font-size: 300%;
+         /* width: 25%;  */
+        /* font-size: 300%;  */
         /* left: 40%; */
     }
     .subtitle {
-        font-size: 200%;
-        width: 18%;
+        /* font-size: 200%;*/
+        width: 13%; 
         /* left: 37%; */
         /* bottom: 44%; */
     }
