@@ -13,21 +13,16 @@
     .mainTitle {
         width: 50%;
         font-size: 110%;
-        /* left: 10%; */
         bottom: 50%;
     }
     .subtitle {
         width: 50%;
-        /* font-size: 80%; */
-        /* left: 10%; */
         bottom: 30%;
     }
     .topButton {
         position: absolute;
         text-decoration: none;
         width: 19%;
-        /* font-size: 14px; */
-        /* height: 20%; */
         left: 30%;
         bottom: 45%;
     }
@@ -35,7 +30,6 @@
         width: 23%; 
         margin: 0 40%; /* This centers the buttons*/ 
         background-color: #ffc800;
-        /* color: black; */
         font-size: 14px;
     }
 
@@ -45,21 +39,16 @@
     .mainTitle {
         width: 50%;
         font-size: 120%;
-        /* left: 10%; */
         bottom: 50%;
     }
     .subtitle {
         width: 35%;
-        /* font-size: 90%; */
-        /* left: 10%; */
         bottom: 35%;
     }
     .topButton {
         position: absolute;
         text-decoration: none;
         width: 19%;
-        /* font-size: 15px; */
-        /* height: 25%; */
         left: 20%;
         bottom: 45%;
     }
@@ -69,7 +58,6 @@
         width: 20%; 
         font-size: 15px;
         padding: 2%;
-        /* color: black; */
     }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -80,12 +68,10 @@
     }
     .subtitle {
         width: 40%;
-        /* font-size: 120%; */
         bottom: 40%;
     }
     .topButton {
         width: 20%;
-        /* height: 13%; */
         left: 20%;
         bottom: 35%;
     }
@@ -99,27 +85,17 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .mainTitle {
-        /* width: 65%; */
         font-size: 175%;
-        /* left: 20%; */
     }
     .subtitle {
         width: 35%;
-        /* font-size: 125%; */
-        /* left: 20%; */
     }
     .topButton {
         width: 17%;
         height: 10%;
         padding: 0%;
         left: 20%;
-        /* bottom: 35%; */
     }
-    /* button { 
-        width: 25%; 
-        font-size: 16px;
-        padding: 2%;
-    } */
 }
 /* Medium devices (landscape tablets, 768px and up) 
     GalaxyS8 Landscape Mode : 798x332px 
@@ -135,9 +111,6 @@
     .topButton {
         width: 13%;
         padding: 0%;
-        /* height: 10%; */
-        /* left: 20%; */
-        /* bottom: 35%; */
     }
     button {
         font-size: 17px;
@@ -150,11 +123,9 @@
     .mainTitle {
         width: 50%;
         font-size: 180%;
-        /* left: 30%; */
     }
     .subtitle {
         width: 20%;
-        /* left: 30%; */
     }
     .topButton {
         width: 9%;
@@ -173,9 +144,6 @@
     .subtitle {
         width: 17%;
     }
-    .topButton {
-        /* width: 9%; */
-    }
     button {
         width: 12%;
         height: 50px;
@@ -185,19 +153,12 @@
 @media only screen and (min-width: 1400px) {
     .mainTitle {
         width: 30%;
-        /* font-size: 200%; */
-        /* left: 35%; */
     }
     .subtitle {
         width: 15%;
-        /* font-size: 160%; */
-        /* left: 37%; */
     }
     .topButton {
         width: 8%;
-        /* height: 10%; */
-        /* left: 20%; */
-        /* bottom: 35%; */
     }
     button {
         width: 11%;
@@ -205,15 +166,7 @@
 }
 /* ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
 @media only screen and (min-width: 1500px) {
-    .mainTitle {
-         /* width: 25%;  */
-        /* font-size: 300%;  */
-        /* left: 40%; */
-    }
     .subtitle {
-        /* font-size: 200%;*/
         width: 13%; 
-        /* left: 37%; */
-        /* bottom: 44%; */
     }
 }

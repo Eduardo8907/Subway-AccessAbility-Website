@@ -48,8 +48,6 @@ li {
         position: absolute;
         text-decoration: none;
         width: 19%;
-        /* font-size: 14px; */
-        /* height: 20%; */
         left: 30%;
         bottom: 45%;
     }
@@ -95,7 +93,6 @@ li {
         position: absolute;
         text-decoration: none;
         width: 19%;
-        /* font-size: 15px; */
         height: 25%;
         left: 30%;
         bottom: 45%;
@@ -219,11 +216,8 @@ Galaxy S8+ Landscape: 798px X 332px
 Microsoft Surface Portrait: 912px X 1225px */
 @media screen and (min-width: 768px) { 
     .topButton {
-        /* font-size: 17px; */
         width: 15%;
         height: 10%;
-        /* left: 20%; */
-        /* bottom: 25%; */
     }
     button {
         width: 15%;
@@ -267,21 +261,15 @@ Microsoft Surface Portrait: 912px X 1225px */
         width: 19%;
     }
     .topButton {
-        /* font-size: 17px; */
         width: 13%;
         height: 10%;
-        /* left: 20%; */
-        /* bottom: 25%; */
     }
 }
 /* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
     .topButton {
-        /* font-size: 17px; */
         width: 10%;
         height: 10%;
-        /* left: 20%; */
-        /* bottom: 25%; */
     }
     button {
         width: 12%;
@@ -299,11 +287,8 @@ Microsoft Surface Portrait: 912px X 1225px */
 ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
 @media only screen and (min-width: 1500px) {
     .topButton {
-        /* font-size: 17px; */
         width: 8%;
         height: 10%;
-        /* left: 20%; */
-        /* bottom: 25%; */
     }
     button {
         width: 10%;

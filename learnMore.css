@@ -5,7 +5,6 @@
 }
 /*  LATEST NEWS 
 --------------------------------------------------- */
-
 figcaption a {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -108,14 +107,10 @@ Microsoft Surface Portrait: 912px X 1225px */
     .mainTitle {
         width: 35%;
         left: 20%;
-        /* font-size: 170%; */
-        /* bottom: 205px; */
     }
     .subtitle {
         width: 35%;
         left: 20%;
-        /* font-size: 120%; */
-        /* bottom: 35%; */
     }
 /* advocacy campaigns */
     .advocacyCampaigns {
@@ -135,7 +130,6 @@ Microsoft Surface Portrait: 912px X 1225px */
         width: 30%;
         font-size: 200%;
         left: 25%;
-        /* bottom: 210px; */
     }
     .subtitle {
         width: 30%;
@@ -151,10 +145,7 @@ Microsoft Surface Portrait: 912px X 1225px */
 @media only screen and (min-width: 1200px) {
     .mainTitle {
         width: 28%;
-        /* height: 8%; */
-        /* padding: 1%; */
         font-size: 220%;
-        /* bottom: 215px; */
     }
     .subtitle {
         width: 28%;
@@ -168,11 +159,9 @@ Microsoft Surface Portrait: 912px X 1225px */
 @media only screen and (min-width: 1400px) {
     .mainTitle {
         width: 22%;
-        /* font-size: 190%; */
     }
     .subtitle {
         width: 28%;
-        /* font-size: 180%; */
         bottom: 33%;
     }
     .story {
@@ -184,7 +173,6 @@ ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
 @media only screen and (min-width: 1500px) {
     .subtitle {
         width: 25%;
-        /* font-size: 180%; */
         bottom: 33%;
     }
     .story {
