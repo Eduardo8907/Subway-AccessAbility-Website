@@ -28,11 +28,13 @@ body {
     filter: none;
 }
 .mainTitle{
+    /* font infront of intro images  */
     background-color: rgba(32, 32, 32, 0.404);
     color: #ffc800;
     position: absolute;
 }
 #mainTitle{
+    /* font infront of homepage image */
     background-color: #ffc800d6;
     color: white;
     position: absolute;
@@ -40,11 +42,13 @@ body {
     padding: 1%;
 }
 .subtitle{
+    /* font infront of intro images  */
     background-color: rgba(32, 32, 32, 0.404);
     color: white;
     position: absolute;
 }
 .sub2{
+    /* font infront of intro images  */
     background-color: rgba(32, 32, 32, 0.404);
     color: white;
     position: absolute;

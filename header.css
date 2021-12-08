@@ -73,13 +73,22 @@ a:hover {
     #wrapper {
         width: 100%;
     }
+    .pageHeader {
+        width: 100%;
+    }
     header p {
-        font-size: 150%;
+        width: 100%;
+        font-size: 160%;
+    }
+    nav {
+        position: relative;
+        bottom: 45px;
     }
     #logo {
-        width: 12%;
-        left: 10%;
-        bottom: 10px;
+        position: absolute;
+        width: 15%;
+        left: 5%;
+        top: 1px;
     }
 }
 /*  GalaxyS8 Portrait Mode : 412x718 */
