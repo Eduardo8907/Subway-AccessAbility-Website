@@ -92,9 +92,7 @@ q {
 ----------- */
 footer {
     background-color: #1F68BD;
-    text-align: center;
     padding: 1%;
-    font-size: 16px;
 }
 footer ul {
     list-style-type: none;
@@ -103,11 +101,12 @@ footer a {
     color: white;
     text-decoration: none;
 }
-.followUs {
-    width: 100%;
-    /* position: relative; */
+.footer_item_title {
+    color: rgb(57, 54, 54);
+    border-bottom: 2px solid rgb(57, 54, 54);
+}
+.list {
     color: white;
-    /* right: 1%; */
 }
 li a:hover {
     background-color: yellow;
@@ -172,8 +171,11 @@ h2 a:hover {
     h1 {
         font-size: 100%;
     }
-    footer li {
+    .footer_item {
         width: 90%;
+    }
+    .footer_item_title {
+        margin-left: 10%;
     }
 }
 /*  GalaxyS8 Portrait Mode : 412x718 */
@@ -199,8 +201,14 @@ h2 a:hover {
     .subtitle, .sub2 {  
         font-size: 90%;
     } 
-    footer li {
+    .footer_item {
         width: 90%;
+    }
+    .footer_item_title {
+        margin-left: 30px;
+    }
+    footer p {
+        text-align: center;
     }
 }
 @media only screen and (min-width: 500px) {
@@ -243,15 +251,6 @@ h2 a:hover {
     h1 {
         font-size: 175%;
     }
-    footer ul {
-        display: inline-flex;
-        padding: 0%;
-        margin:  3% 1%;
-    }
-    footer li {
-        padding: 1%;
-        width: 100px;
-    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) { 
@@ -267,8 +266,12 @@ h2 a:hover {
         padding-top: 3%;
         font-size: 170%;
     }
-    footer ul {
-        margin: 1% 4%;
+    .footer_item {
+        width: 30%;
+        float: left;
+    }
+    footer p {
+        clear: both;
     }
 }
 /* Medium devices (landscape tablets, 944px and up .. 912px is portrait for the surface) */
@@ -289,37 +292,17 @@ h2 a:hover {
     p {
         font-size: 18px;
     }
-    footer ul{
-        font-size: 18px;
-    }
-    footer li {
-        padding: 1%;
-        width: 110px;
-    }
+ 
 }
 /* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
     #mainTitle {
         font-size: 230%;
     }
-    footer ul{
-        margin: 1% 5%;
-    }
-    footer li {
-        padding: 1%;
-        width: 110px;
-    }
 }
 @media only screen and (min-width: 1400px) {
     p {
         font-size: 20px;
-    }
-    footer ul{
-        font-size: 20px;
-        margin: 1% 9%;
-    }
-    footer li {
-        width: 115px;
     }
 }
 /* ASUS Laptop ROG Zephyrus M15 : 1536x721px  */

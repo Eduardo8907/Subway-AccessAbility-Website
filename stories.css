@@ -11,7 +11,6 @@
 .noFilter { /*// PERSONA IMAGE IN WRITTEN TESTIMONIES //*/
     filter: none;
 }
-/* /testimoniesCSS */
 /* OTHER WAYS TO GET INVOLVED 
  JOIN US 
  ----------------------------*/
@@ -233,11 +232,8 @@ Microsoft Surface Portrait: 912px X 1225px */
         width: 100%;
     }
 /* written testimonies */
-    .writtenTestimonies {
-        display: block;
-    }
     figure.column {
-        width: 30%;
+        width: 200px;
         float: left;
     }  
 }
