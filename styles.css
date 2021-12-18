@@ -102,8 +102,8 @@ footer a {
     text-decoration: none;
 }
 .footer_item_title {
-    color: rgb(57, 54, 54);
-    border-bottom: 2px solid rgb(57, 54, 54);
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 .list {
     color: white;
