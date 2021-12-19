@@ -1,3 +1,9 @@
+/* This style sheet has the media queries for the learnmore.html
+this will mainly adjust the width and placement of the text 
+that is on top of the intro image, or the image after the header.
+it will also have to make the columns responive deoending on the screen size,
+larger devices will see two to four columns in a row and smaller will see one column */
+
 /* ADVOCACY CAMPAIGNS SECTION 
 --------------------------------------------------- */
 .advocacyCampaigns { 
@@ -17,8 +23,8 @@ figcaption a:hover {
 
 /* MEDIA QUERIES 
 --------------------------------------------------------------------- */
-/* Devices smaller the 400px */
 @media only screen and (max-width: 400px) {
+/* CSS for device screens smaller than 400px */
     .mainTitle {
         width: 50%;
         font-size: 110%;
@@ -37,33 +43,28 @@ figcaption a:hover {
         flex-direction: column;
     }
 }
-/*  GalaxyS8 Portrait Mode : 412x718 */
 @media only screen and (min-width: 400px) {
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* reference - GalaxyS8 Portrait Mode : 412x718 */
     .mainTitle {
         width: 60%;
         font-size: 160%;
         left: 5%;
-        bottom: 50%;
+        bottom: 50%; /*same position for all screen sizes*/ 
     }
     .subtitle {
         width: 50%;
         font-size: 80%;
         left: 5%;
-        bottom: 35%;
+        bottom: 35%; /*same position for all screen sizes*/ 
     }
-/* advocacy campaigns */
-/* latest news */
-    .row {
+    .row { /* latest news */
         display: flex;
-        flex-direction: column;
-    }
-}
-@media only screen and (max-width: 500px) {
-    figure.column {
-        margin: 0%;
+        flex-direction: column; /*latest new is in one column instead of 4*/
     }
 }
 @media only screen and (min-width: 500px) {
+    /* CSS for screens of 500px and up. will end when the next media query starts. */
     .mainTitle {
         width: 50%;
         font-size: 170%;
@@ -77,8 +78,9 @@ figcaption a:hover {
         font-size: 16px;
     }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* Small devices (portrait tablets and large phones, 600px and up) */
     .mainTitle {
         width: 45%;
         padding: 0.5% ;
@@ -93,17 +95,18 @@ figcaption a:hover {
         bottom: 35%;
     }
     .row {        
-        display: block;
+        display: block; /*turns to one row of 4 instead of a column of 4 items*/
     }
-    .story {
+    .story { /*makes two columns */
         width: 30%;
         float: left;
     }
 }
-/* Medium devices (landscape tablets, 768px and up) 
-Galaxy S8+ Landscape: 798px X 332px
-Microsoft Surface Portrait: 912px X 1225px */
 @media screen and (min-width: 768px) { 
+    /* CSS for screens of 768px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* for reference - Galaxy S8+ Landscape: 798px X 332px
+    Microsoft Surface Portrait: 912px X 1225px */
     .mainTitle {
         width: 35%;
         left: 20%;
@@ -116,7 +119,7 @@ Microsoft Surface Portrait: 912px X 1225px */
     .advocacyCampaigns {
         display: flex;
     }
-    .column  {
+    .column  { /*one columne becomesa two. puts image and description side by side*/
         width: 50%;
     }
     .advocacyCampaigns {
@@ -127,8 +130,10 @@ Microsoft Surface Portrait: 912px X 1225px */
         width: 33.33%;
     }
 }
-/* Medium devices (landscape tablets, 944px and up .. 912px is portrait for the microsoft surface) */
 @media only screen and (min-width: 992px) {
+    /* CSS for screens of 992px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 944px and up .. 
+    reference - 912px is portrait for the microsoft surface) */
     .mainTitle {
         width: 30%;
         font-size: 200%;
@@ -139,21 +144,23 @@ Microsoft Surface Portrait: 912px X 1225px */
         font-size: 130%;
         left: 25%;
     }
-    .story {
-        width: 16%;
-    }
-    figcaption {
-        font-size: 14px;
-    }
     .tangSection {
         padding: 0px;
     }
     .tangSection h1 {
         padding-left: 5%;
     }
+/* latest news */
+    .story { /*two columns become 4 columns to sit in one row*/
+        width: 16%;
+    }
+    figcaption {
+        font-size: 14px;
+    }
 }
-/* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
+    /* CSS for screens of 1200px and up. will end when the next media query starts. */
+    /* reference - Microsoft Surface Landscape: 1368px X 769px */
     .mainTitle {
         width: 28%;
         font-size: 220%;
@@ -165,6 +172,7 @@ Microsoft Surface Portrait: 912px X 1225px */
     }
 }
 @media only screen and (min-width: 1400px) {
+    /* CSS for screens of 1400px and up. will end when the next media query starts. */
     .mainTitle {
         width: 22%;
     }
@@ -172,10 +180,15 @@ Microsoft Surface Portrait: 912px X 1225px */
         width: 28%;
         bottom: 33%;
     }
+    /* latest news */
+    .story {
+        width: 19%;
+    }
 }
-/* Extra large devices (large laptops and desktops, 1500px and up) 
-ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
 @media only screen and (min-width: 1500px) {
+    /* CSS for screens of 1500px and up. */
+    /* Extra large devices (large laptops and desktops, 1500px and up)*/
+    /* refernece - ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
     .subtitle {
         width: 25%;
         bottom: 33%;

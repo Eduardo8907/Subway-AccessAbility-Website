@@ -1,15 +1,18 @@
-/* petition section */
+/* This style sheet has the media queries for the petition.html
+this will mainly adjust the width and placement of the text-  
+that is on top of the intro image, or the image after the header.
+it will adjust the placement for the top button and position the bottom one in the center. */
+
 #petitionDescription {
     background-color: rgba(226, 229, 38, 0.48);
     margin: 0 0 0% 0;
     padding: 5% 0;
 }
 
-
 /* MEDIA QUERIES 
 -----------------------------------------------------*/
-/* Devices smaller the 400px */
 @media only screen and (max-width: 400px) {
+/* CSS for device screens smaller than 400px */
     .mainTitle {
         width: 50%;
         font-size: 110%;
@@ -19,23 +22,23 @@
         width: 50%;
         bottom: 30%;
     }
-    .topButton {
-        position: absolute;
-        text-decoration: none;
-        width: 19%;
-        left: 30%;
-        bottom: 45%;
-    }
     button { 
         width: 23%; 
         margin: 0 40%; /* This centers the buttons*/ 
         background-color: #ffc800;
         font-size: 14px;
     }
-
+    .topButton {
+        position: absolute;
+        text-decoration: none;
+        width: 19%;
+        left: 30%; 
+        bottom: 45%;
+    }
 }
-/*  GalaxyS8 Portrait Mode : 412x718 */
 @media only screen and (min-width: 400px) {
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* reference - GalaxyS8 Portrait Mode : 412x718 */
     .mainTitle {
         width: 50%;
         font-size: 120%;
@@ -45,13 +48,6 @@
         width: 35%;
         bottom: 35%;
     }
-    .topButton {
-        position: absolute;
-        text-decoration: none;
-        width: 19%;
-        left: 20%;
-        bottom: 45%;
-    }
     button { 
         margin: 0 40%; /* This centers the buttons*/ 
         background-color: #ffc800;
@@ -59,9 +55,16 @@
         font-size: 15px;
         padding: 2%;
     }
+    .topButton {
+        position: absolute;
+        text-decoration: none;
+        width: 19%;
+        left: 20%; /*moves button 30% from the center*/
+        bottom: 45%;
+    }
 }
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 500px) {
+    /* CSS for screens of 500px and up. will end when the next media query starts. */
     .mainTitle {
         width: 70%;
         font-size: 170%;
@@ -70,20 +73,21 @@
         width: 40%;
         bottom: 40%;
     }
-    .topButton {
-        width: 20%;
-        left: 20%;
-        bottom: 35%;
-    }
     button { 
         margin: 0 37%; /* This centers the buttons*/ 
         width: 25%; 
         font-size: 15px;
         padding: 2%;
     }
+    .topButton {
+        width: 20%;
+        left: 20%;
+        bottom: 35%;
+    }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* Small devices (portrait tablets and large phones, 600px and up) */
     .mainTitle {
         font-size: 175%;
     }
@@ -91,16 +95,17 @@
         width: 35%;
     }
     .topButton {
-        width: 17%;
+        width: 17%; /*width adjustment for screensize*/
         height: 10%;
         padding: 0%;
         left: 20%;
     }
 }
-/* Medium devices (landscape tablets, 768px and up) 
-    GalaxyS8 Landscape Mode : 798x332px 
-    Sureface Portrait Mode : 912x1225px */
 @media screen and (min-width: 768px) { 
+    /* CSS for screens of 768px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* for reference - Galaxy S8+ Landscape: 798px X 332px
+    Microsoft Surface Portrait: 912px X 1225px */
     .mainTitle {
         width: 50%;
         font-size: 180%;
@@ -108,18 +113,22 @@
     .subtitle{ 
         width: 25%;
     }
-    .topButton {
-        width: 13%;
-        padding: 0%;
-    }
     button {
         font-size: 17px;
         margin: 0 40%; /* This centers the buttons*/ 
         width: 17%;
     }
+    /* both buttons dont have to same width with one rule set so gave them individual
+    rules to keep similar width sizes */
+    .topButton {
+        width: 13%;
+        padding: 0%;
+    }
 }
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    /* CSS for screens of 992px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 944px and up .. 
+    reference - 912px is portrait for the microsoft surface) */
     .mainTitle {
         width: 50%;
         font-size: 180%;
@@ -127,16 +136,16 @@
     .subtitle {
         width: 20%;
     }
-    .topButton {
-        width: 9%;
-    }
     button {
         width: 14%;
     }
+    .topButton {
+        width: 9%;
+    }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) 
-    Surface Landscape Mode : 1368x769px */
 @media only screen and (min-width: 1200px) {
+    /* CSS for screens of 1200px and up. will end when the next media query starts. */
+    /* reference - Microsoft Surface Landscape: 1368px X 769px */
     .mainTitle {
         font-size: 200%;
         width: 35%; 
@@ -151,21 +160,24 @@
     }
 }
 @media only screen and (min-width: 1400px) {
+    /* CSS for screens of 1400px and up. will end when the next media query starts. */
     .mainTitle {
         width: 30%;
     }
     .subtitle {
         width: 15%;
     }
-    .topButton {
-        width: 8%;
-    }
     button {
         width: 11%;
     }
+    .topButton {
+        width: 8%;
+    }
 }
-/* ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
 @media only screen and (min-width: 1500px) {
+    /* CSS for screens of 1500px and up. */
+    /* Extra large devices (large laptops and desktops, 1500px and up)*/
+    /* refernece - ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
     .subtitle {
         width: 13%; 
     }

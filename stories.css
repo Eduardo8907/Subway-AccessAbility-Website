@@ -1,3 +1,10 @@
+/* This style sheet has the media queries for the stories.html
+this will mainly adjust the width and placement of the text  
+that is on top of the intro image, or the image after the header.
+it will adjust the placement for the top button and position the bottom one in the center.
+it will have to make the columns responive deoending on the screen size,
+larger devices will see two to four columns in a row and smaller will see one column */
+
 /* VIDEO TESTIMONIES
 ------------------- */
 .videoTestimony {
@@ -8,7 +15,7 @@
 .writtenTestimonies {
     padding: 2%;
 }
-.noFilter { /*// PERSONA IMAGE IN WRITTEN TESTIMONIES //*/
+.noFilter { /* PERSONA IMAGE will have no greyscale filter like intro images */
     filter: none;
 }
 /* OTHER WAYS TO GET INVOLVED 
@@ -24,8 +31,8 @@ li {
 
 /* MEDIA QUERIES 
 -----------------------------------------------------*/
-/* Devices smaller the 400px, Mobiles */
 @media only screen and (max-width: 400px) {
+    /* CSS for device screens smaller than 400px */
     .mainTitle {
         width: 50%;
         font-size: 110%;
@@ -68,8 +75,9 @@ li {
         margin: 0%;
     }
 }
-/*  GalaxyS8 Portrait Mode : 412x718 */
 @media only screen and (min-width: 400px) {
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* reference - GalaxyS8 Portrait Mode : 412x718 */
     .mainTitle {
         width: 50%;
         font-size: 120%;
@@ -88,14 +96,6 @@ li {
         left: 10%;
         bottom: 23%;
     }
-    .topButton {
-        position: absolute;
-        text-decoration: none;
-        width: 19%;
-        height: 25%;
-        left: 30%;
-        bottom: 45%;
-    }
     button { /* CSS for both bottom and top button */
         width: 40%;
         margin: 0 33%;
@@ -103,22 +103,26 @@ li {
         color: black;
         font-size: 15px;
     }
+    .topButton {
+        position: absolute; /*allows for adjustment over top image*/
+        text-decoration: none;
+        width: 19%;
+        height: 25%;
+        left: 30%;
+        bottom: 45%;
+    }
 /* video testimonies */
-    iframe{
+    iframe{ /*video and description will be in one column*/
         width: 100%;
     }
 /* wrtten testimonies */
-    .writtenTestimonies img {
+    .writtenTestimonies img { /*on smaller devices the image will be the sidth of the screen*/
         width: 100%;
-        margin: 0%;
-    }
-}
-@media only screen and (max-width: 500px) {
-    figure.column {
         margin: 0%;
     }
 }
 @media only screen and (min-width: 500px) {
+    /* CSS for screens of 500px and up. will end when the next media query starts. */
     .introSection figure{
         width: 100%;
         margin: 0%;
@@ -129,24 +133,24 @@ li {
     }
     .subtitle , .sub2 {
         font-size: 120%;
-        left: 10%;
+        left: 10%; /*alings elements to have a clear look*/
     }
     .subtitle{ 
         width: 65%;
-        bottom: 43%;
+        bottom: 43%; /* adjustment due to width growing and leaving large empty space*/ 
     }
     .sub2{
         width: 25%;
         bottom: 35%;
+    }
+    button { 
+        width: 28%;
     }
     .topButton {
         width: 20%;
         height: 15%;
         left: 20%;
         bottom: 25%;
-    }
-    button { 
-        width: 28%;
     }
     .topButton a {
          font-size: 16px;
@@ -168,8 +172,9 @@ li {
         height: 250px;
     }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* Small devices (portrait tablets and large phones, 600px and up) */
     .mainTitle{
         width: 65%;
         font-size: 175%;
@@ -210,10 +215,11 @@ li {
         height: 250px;
     }
 }
-/* Medium devices (landscape tablets, 768px and up) 
-Galaxy S8+ Landscape: 798px X 332px
-Microsoft Surface Portrait: 912px X 1225px */
 @media screen and (min-width: 768px) { 
+   /* CSS for screens of 768px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* for reference - Galaxy S8+ Landscape: 798px X 332px
+    Microsoft Surface Portrait: 912px X 1225px */
     .topButton {
         width: 15%;
         height: 10%;
@@ -223,7 +229,7 @@ Microsoft Surface Portrait: 912px X 1225px */
         font-size: 17px;
     }
 /* video testimony  */
-    .videoTestimony {
+    .videoTestimony { /* video and description sit side by side instead of being one column*/
         margin: 1% 0;
         padding: 0%;
         display: flex;
@@ -232,16 +238,17 @@ Microsoft Surface Portrait: 912px X 1225px */
         width: 100%;
     }
 /* written testimonies */
-    figure.column {
+    figure.column { 
+        /*places the image to the left of the text as well as 
+        allows for the text to wrap around the image*/
         width: 200px;
         float: left;
     }  
 }
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    iframe.column {
-        margin: 0%;
-    }
+    /* CSS for screens of 992px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 944px and up .. 
+    reference - 912px is portrait for the microsoft surface) */
     .subtitle , .sub2 {
         left: 30%;
     }
@@ -261,8 +268,9 @@ Microsoft Surface Portrait: 912px X 1225px */
         height: 10%;
     }
 }
-/* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
+    /* CSS for screens of 1200px and up. will end when the next media query starts. */
+    /* reference - Microsoft Surface Landscape: 1368px X 769px */
     .topButton {
         width: 10%;
         height: 10%;
@@ -272,16 +280,15 @@ Microsoft Surface Portrait: 912px X 1225px */
     }
 }
 @media only screen and (min-width: 1400px) {
+    /* CSS for screens of 1400px and up. will end when the next media query starts. */
     .mainTitle{ 
         font-size: 190%;
-
     }
-
-
 }
-/* Extra large devices (large laptops and desktops, 1500px and up) 
-ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
 @media only screen and (min-width: 1500px) {
+    /* CSS for screens of 1500px and up. */
+    /* Extra large devices (large laptops and desktops, 1500px and up)*/
+    /* refernece - ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
     .topButton {
         width: 8%;
         height: 10%;

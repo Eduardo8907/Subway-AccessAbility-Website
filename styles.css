@@ -1,3 +1,8 @@
+ /* This style sheet holds all the common CSS properties and media queries needed for all HTML's
+ this includes CSS for the intro images and text positioned over the image,
+ yellow and tang section, and footer 
+ also media queries to make the nav bar responsive */
+
  header, section, footer, aside, nav, article, figure, figcaption {
     display: block;
 } 
@@ -14,27 +19,27 @@ body {
 .introSection  {
     position: relative;
 }
-.introSection video{
-    width: 100%;
-}
 .introSection figure{
     width: 100%;
     margin: 0%;
 }
 .introSection img{
+    /* this filter allows for the text over the image to be more visible  */
     filter: grayscale(70%);
 }
 .introSection #mainImg {
+    /* homepage image does not need a filter since there is 
+    no text like the others */
     filter: none;
 }
 .mainTitle{
-    /* font infront of intro images  */
+    /* text infront of intro images of pages except the homepage */
     background-color: rgba(32, 32, 32, 0.404);
     color: #ffc800;
-    position: absolute;
+    position: absolute; 
 }
 #mainTitle{
-    /* font infront of homepage image */
+    /* text infront of homepage image */
     background-color: #ffc800d6;
     color: white;
     position: absolute;
@@ -148,14 +153,14 @@ h2 a:hover {
       text-align: center;
     }
 }
-/* Devices smaller the 400px */
 @media only screen and (max-width: 400px) {
+/* CSS for device screens smaller than 400px */
     .introSection figure{
-        width: 100%;
+        width: 100%; /* image fits to screen */
         margin: 0%;
     }
     .mainTitle, .subtitle, .sub2 {
-        left: 10%;
+        left: 10%; /* alings all three elements over image */
     } 
     #mainTitle {
         width: 100%;
@@ -165,21 +170,22 @@ h2 a:hover {
         font-size: 100%;
         text-align: center;
     }
-    .subtitle, .sub2 {  
+    .subtitle, .sub2 {  /*sub headers are same size*/
         font-size: 80%;
     } 
     h1 {
         font-size: 100%;
     }
-    .footer_item {
+    .footer_item {/**/
         width: 90%;
     }
-    .footer_item_title {
+    .footer_item_title { /*aligns title with list items*/ 
         margin-left: 10%;
     }
 }
-/*  GalaxyS8 Portrait Mode : 412x718 */
 @media only screen and (min-width: 400px) {
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* reference - GalaxyS8 Portrait Mode : 412x718 */
     h1 {
         font-size: 160%;
     }
@@ -187,32 +193,31 @@ h2 a:hover {
         left: 10%;
     }
     #mainTitle {
-        width: 100%;
+        width: 100%; /*aligns the yellow elements edges with the image width*/
         height: 15%;
         bottom: 0%;
         padding-top: 6%;
         font-size: 134%;
         text-align: center;
     }
-    #mainTitle h1{
+    #mainTitle h1{ /*style for the font inside the yellow section over the image*/
         height: 150%;
         width: 100%;
     }
-    .subtitle, .sub2 {  
+    .subtitle, .sub2 {   /*sub headers are same size*/
         font-size: 90%;
     } 
-    .footer_item {
+    .footer_item { /*evens out the left and right edges from the screen*/
         width: 90%;
     }
-    .footer_item_title {
+    .footer_item_title {/*aligns title with list items*/ 
         margin-left: 30px;
-    }
-    footer p {
-        text-align: center;
     }
 }
 @media only screen and (min-width: 500px) {
-    .subtitle, .sub2 {    
+    /* CSS for screens of 500px and up. will end when the next media query starts. */
+      /*adjusted font size for this screen size*/
+    .subtitle, .sub2 {   
         font-size: 120%;
     } 
     #mainTitle {
@@ -222,19 +227,19 @@ h2 a:hover {
     h1 {
         font-size: 170%;
     }
-
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .introSection img{
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    .introSection img{ /*gives white space on the sides of image to keep it from getting distrorted*/
         margin: 1% 10%;
         width: 80%;
         height: 450px;
     }
-    .mainTitle, .subtitle, .sub2 {
+    .mainTitle, .subtitle, .sub2 { /*aligns these elements across all pages*/
         left: 20%;
     }
-    #mainTitle {
+    #mainTitle { /*aligns yellow background with the image corners*/
         margin: 1% 10%;
         width: 78%;
         height: 10%;
@@ -242,7 +247,7 @@ h2 a:hover {
         padding-top: 4%;
         font-size: 150%;
     }
-    .subtitle, .sub2 {  
+    .subtitle, .sub2 {  /*adjusted font size for screen size*/
         font-size: 125%;
     } 
     p {
@@ -252,8 +257,11 @@ h2 a:hover {
         font-size: 175%;
     }
 }
-/* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) { 
+    /* CSS for screens of 768px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* for reference - Galaxy S8+ Landscape: 798px X 332px
+    Microsoft Surface Portrait: 912px X 1225px */
     .introSection img{
         margin: 1% 15%;
         width: 70%;
@@ -266,16 +274,18 @@ h2 a:hover {
         padding-top: 3%;
         font-size: 170%;
     }
-    .footer_item {
+    .footer_item { /*three footer items will sit on a row instead of a column */
         width: 30%;
         float: left;
     }
-    footer p {
+    footer p { /*will sit at the bottom of he bage instead of floating with the other items*/
         clear: both;
     }
 }
-/* Medium devices (landscape tablets, 944px and up .. 912px is portrait for the surface) */
 @media only screen and (min-width: 992px) {
+    /* CSS for screens of 992px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 944px and up .. 
+    reference - 912px is portrait for the microsoft surface) */
     .introSection img{
         margin: 1% 20%;
         width: 60%;
@@ -294,19 +304,23 @@ h2 a:hover {
     }
  
 }
-/* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
+    /* CSS for screens of 1200px and up. will end when the next media query starts. */
+    /* reference - Microsoft Surface Landscape: 1368px X 769px */
     #mainTitle {
         font-size: 230%;
     }
 }
 @media only screen and (min-width: 1400px) {
+    /* CSS for screens of 1400px and up. will end when the next media query starts. */
     p {
         font-size: 20px;
     }
 }
-/* ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
 @media only screen and (min-width: 1500px) {
+    /* CSS for screens of 1500px and up. */
+    /* Extra large devices (large laptops and desktops, 1500px and up)*/
+    /* refernece - ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
     .introSection img{
         margin: 1% 20%;
         width: 60%;

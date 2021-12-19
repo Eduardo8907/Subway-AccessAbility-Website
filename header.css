@@ -1,3 +1,9 @@
+/* This style sheet is strickly for the header elements
+and media queries to adjust them to different screen sizes.
+this includes CSS for rotating the campaign title,
+positioning the logo over the title,
+background colors and positioning the nav bar under the title */
+
 body {
     font-family: helvetica, Arial, sans-serif;
     background-color: white;
@@ -67,8 +73,8 @@ a:hover {
 
 /* MEDIA QUERIES 
 ------------------------------------ */
-/* Devices smaller the 400px */
 @media only screen and (max-width: 400px) {
+/* CSS for device screens smaller than 400px */
     #wrapper {
         width: 100%;
     }
@@ -90,14 +96,15 @@ a:hover {
         top: 1px;
     }
 }
-/*  GalaxyS8 Portrait Mode : 412x718 */
 @media only screen and (min-width: 400px) {
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* reference - GalaxyS8 Portrait Mode : 412x718 */
     header p {
-        font-size: 220%;
+        font-size: 220%; /*makes font big enough to fit across the top for smaller devices*/
     }
     nav {
         position: relative;
-        bottom: 45px;
+        bottom: 45px; /*moves navbar up and positions it right under the campaign title*/ 
     }
     p.topFollow {
         display: block;
@@ -106,61 +113,64 @@ a:hover {
     }
     #logo {
         position: absolute;
-        width: 15%;
+        width: 15%; /*good proportion to the font and screen*/
         left: 5%;
         top: 1px;
     }
 }
 @media only screen and (min-width: 500px) {
+    /* CSS for screens of 500px and up. will end when the next media query starts. */
     header p {
-        font-size: 270%;
+        font-size: 270%; /*a bit larger for bigger devices*/
     }
     #logo {
-        width: 14%;
+        width: 14%; /*adjust for better propotion*/
         top: 1px;
     }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    /* CSS for screens of 400px and up. will end when the next media query starts. */
+    /* Small devices (portrait tablets and large phones, 600px and up) */
     header p {
-        font-size: 330%;
+        font-size: 330%; 
     }
     p.topFollow {
-        display: block;
-        top: 20%;
-        height: 4%;
-        font-size: 100%;
+        top: 20%; /* under navbar to not have gaps between yellow and tang colors*/
     }
     nav {
-        bottom: 54px;
+        bottom: 54px; /*adjustment to placement due to larger font-size of title*/
     }
     nav a {
-        padding: 0% 6.4%;
+        padding: 0% 6.4%; /*minimizes empty space on the end of navbar */
     }
 }
-/* Medium devices (landscape tablets, 768px and up) 
-Galaxy S8+ Landscape: 798px X 332px
-Microsoft Surface Portrait: 912px X 1225px */
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
+    /* CSS for screens of 768px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* for reference - Galaxy S8+ Landscape: 798px X 332px
+    Microsoft Surface Portrait: 912px X 1225px */
     header p { 
         font-size: 400%;
     }
     p.topFollow {
-        top: 22%;
+        top: 22%; /*minimizes difference between top of element and navbar*/
     }
     #logo {
-        top: 0;
+        top: 0; 
     }
     nav a {
-        padding: 0% 7.7%;
+        padding: 0% 7.7%; /*minimizes empty space */
     }
 }
 @media only screen and (min-width: 992px) {
+    /* CSS for screens of 992px and up. will end when the next media query starts. */
+    /* Medium devices (landscape tablets, 944px and up .. 
+    reference - 912px is portrait for the microsoft surface) */
     header p {
         font-size: 480%;
     }
     p.topFollow {
-        top: 25%;
+        /* top: 25%; */
         font-size: 110%;
     }
     #logo {
@@ -172,16 +182,16 @@ Microsoft Surface Portrait: 912px X 1225px */
         bottom: 65px;
     }
     nav a {
-        padding: 0.5% 8.7%;
+        padding: 0.5% 8.7%;  /*minimizes empty space */
     }
 }
-/* Microsoft Surface Landscape: 1368px X 769px */
 @media only screen and (min-width: 1200px) {
+    /* CSS for screens of 1200px and up. will end when the next media query starts. */
+    /* reference - Microsoft Surface Landscape: 1368px X 769px */
     header p {
         font-size: 560%;
     }
     p.topFollow {
-        top: 28%;
         font-size: 120%;
     }
     #logo {
@@ -195,22 +205,24 @@ Microsoft Surface Portrait: 912px X 1225px */
     }
 }
 @media only screen and (min-width: 1400px) {
-    p.topFollow {
-        top: 35%;
-    }
+    /* CSS for screens of 1400px and up. will end when the next media query starts. */
     #logo {
         width: 10%;
         left: 13%;
     }
-}
-/* Extra large devices (large laptops and desktops, 1500px and up)
-ASUS Laptop ROG Zephyrus M15 Viewport : 1536x721px  */
-@media only screen and (min-width: 1500px) {
-    p.topFollow {
-        top: 50%;
+    nav a {
+        padding: 0.5% 9.9%;
     }
+}
+@media only screen and (min-width: 1500px) {
+    /* CSS for screens of 1500px and up. */
+    /* Extra large devices (large laptops and desktops, 1500px and up)*/
+    /* refernece - ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
     #logo {
         width: 9%;
         left: 18%;
+    }
+    nav a {
+        padding: 0.5% 10%;
     }
 }
