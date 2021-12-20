@@ -213,6 +213,9 @@ h2 a:hover {
     .footer_item_title {/*aligns title with list items*/ 
         margin-left: 30px;
     }
+    footer p{
+        text-align: center;
+    }
 }
 @media only screen and (min-width: 500px) {
     /* CSS for screens of 500px and up. will end when the next media query starts. */
