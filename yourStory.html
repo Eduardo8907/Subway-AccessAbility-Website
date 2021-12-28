@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your experience</title>
+    <link rel="stylesheet" href="yourStory2.css">
+</head>
+<body>
+    <div id="container">
+        <h1>TELL US YOUR EXPERIENCE!</h1>
+        <p>Share with us a recent bad experience riding the NYC subway. In what negative ways did it influence your commute? Your story will be presented to the Mayor withour signed petition to support our cause for the funding of elevators for our transit system.</p>
+        <p>Please use the form below to share you story. We look forward to reading your submission and your contribution for a more equal ridership.</p> 
+        <!-- START PERSONAL INFO FIELDS -->
+        <form method="post" action="showform.php">
+            <fieldset class="personInfo">
+                <!-- <h2 >Personal Information</h2> -->
+                <ul>
+                    <li>
+                        <label for="firstName">First Name:<span class="required">*</span></label>
+                        <input type="text" name="firstName" id="firstName"  placeholder="Enter you first name" autofocus="autofocus" />
+                    </li>
+                    <li>
+                        <label for="lastName">Last Name:<span class="required">*</span></label>
+                        <input type="text" name="lastName" id="lastName"  placeholder="Enter your last name" />
+                    </li>
+                    <li>
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email" class="large" placeholder="Enter your email">
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" class="large" placeholder="xxx-xxx-xxxx" >
+                    </li>
+                </ul>
+            </fieldset> 
+            <!--end personal information fields-->
+            <!-- START QUESTION FIELDS -->
+            <fieldset class="radios">
+                <!-- <h2>Questionair</h2> -->
+                <p>How many times do you ride the subway?</p>
+                <!-- START RADIOS -->
+                <ul>
+                    <li>
+                        <input type="radio" name="rides" id="rides" value="rarely" >
+                        <label for="rides">Rarely</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="rides" id="rides" value="once a week" >
+                        <label for="rides">Once a week</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="rides" id="rides" value="few times a week" >
+                        <label for="rides">Few times a week</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="rides" id="rides" value="often" >
+                        <label for="rides">Often</label>
+                    </li>
+                </ul>
+                <p>In which neighborhood do you live in?</p>
+                <ul>
+                    <li>
+                        <input type="radio" name="rides" id="rides" value="often" >
+                        <label for="rides">Brooklyn</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="rides" id="rides" value="often" >
+                        <label for="rides">Manhattan</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="rides" id="rides" value="once a week" >
+                        <label for="rides">Queens</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="rides" id="rides" value="rarely" >
+                        <label for="rides">The Bronx</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="rides" id="rides" value="few times a week" >
+                        <label for="rides">Staten Island</label>
+                    </li>
+                </ul>
+                <!-- end radios -->
+                <div class="notRadios">
+                    <ul>
+                        <p for="issue_encountered">What problem did encounter while taking the subway?<span class="required">*</span> </p>
+                        
+                        <li>
+                            <textarea name="issue_encountered" id="issue_encountered"  rows="8" class="large"></textarea>
+                        </li>
+                        <li>
+                            <label for="upload">Uplaod an image or video</label>
+                            <input type="file" name="upload" id="upload">
+                            <p class="instructions">Maximum size of 700k. JPG, GIF, PNG, MOV </p>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset> 
+            <!--end question fields-->
+            <a href="stories.html"><button> &lAarr; go back</button></a>
+            <fieldset>
+                <input type="submit" class="share_story" value="Share Your Story">
+            </fieldset>
+        </form> <!--end form-->
+    </div> <!-- #container -->
+</body>
+</html>
