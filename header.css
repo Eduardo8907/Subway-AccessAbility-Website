@@ -1,4 +1,4 @@
-/* This style sheet is strickly for the header elements
+/* This style sheet is strickly for the header and nav elements
 and media queries to adjust them to different screen sizes.
 this includes CSS for rotating the campaign title,
 positioning the logo over the title,
@@ -10,19 +10,33 @@ body {
 }
 header {
     background-color: rgba(249, 192, 22, 0.63);
+    background-image: linear-gradient(176deg, rgba(249, 192, 22, 0.63), 10%, rgba(255, 255, 255, 0.746), 55%, rgba(249, 192, 22, 0.63) );
     width: 100%;
     align-items:center;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 93% 0);
 }
 header p {
-    transform: rotate(-4deg); 
+    transform: rotate(-3deg); 
     width: 100%;
     font-weight: bold;
     text-align: center;
     color: blue;
+    z-index: 2;
+    position: relative;
+}
+.reflection {
+    transform: rotatex(180deg) translatey(61px) translateX(18px) rotate(3deg) skew(-20deg);
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+   z-index: 1;
+   opacity: calc(0.6);
 }
 .pageHeader {
     width: 100%;
-    display: flex;
+    overflow: hidden;
 }
 /* NAVIGATION BAR CSS */
 nav {
@@ -31,7 +45,7 @@ nav {
 }
 nav a {
     color: white;
-    font-size: 20px;
+    font-size: 16.4px;
     float: left;
     display: block;
     text-align: center;
@@ -49,19 +63,26 @@ nav .icon {
     display: none;
 }
 #logo {
+    width: 12vw;
     position: relative;
-    transform: rotate(-15deg)
+    transform: rotate(-15deg);
+    opacity: 90%;
 }
 /* END NAVIGATION CSS */
 /* social media under navbar */
 p.topFollow {
     background-color: rgb(227, 162, 0);
     font-size: 80%;
-    text-align: right;
+    text-align: end;
     color: white;
     margin: 0%;
     transform: none;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    padding: 3px 0px;
+    letter-spacing: 0.09em;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -82,8 +103,8 @@ a:hover {
         width: 100%;
     }
     header p {
-        width: 100%;
-        font-size: 160%;
+        font-size: 7vw;
+        height: 20px;
     }
     nav {
         position: relative;
@@ -91,16 +112,23 @@ a:hover {
     }
     #logo {
         position: absolute;
-        width: 15%;
-        left: 5%;
-        top: 1px;
+        left: 10%;
+        top: 6px;
+    }
+    .reflection {
+        transform: rotatex(180deg) translatey(120%) translateX(1.5%) rotate(3deg) skew(-20deg);
+        padding: 0;
+        margin: 0;
+        color: rgb(255, 255, 255);
+       height: 25px;
+       z-index: 1;
     }
 }
 @media only screen and (min-width: 400px) {
     /* CSS for screens of 400px and up. will end when the next media query starts. */
     /* reference - GalaxyS8 Portrait Mode : 412x718 */
     header p {
-        font-size: 220%; /*makes font big enough to fit across the top for smaller devices*/
+        font-size: 7vw;
     }
     nav {
         position: relative;
@@ -108,32 +136,32 @@ a:hover {
     }
     p.topFollow {
         display: block;
-        height: 4%;
-        font-size: 100%;
+        font-size: 90%;
     }
     #logo {
         position: absolute;
-        width: 15%; /*good proportion to the font and screen*/
-        left: 5%;
-        top: 1px;
+        left: 11%;
+        top: 4px;
+    }
+    .reflection {
+        transform: rotatex(180deg) translatey(140%) translateX(1.5%) rotate(3deg) skew(-20deg);
+        color: rgb(255, 255, 255);
     }
 }
 @media only screen and (min-width: 500px) {
     /* CSS for screens of 500px and up. will end when the next media query starts. */
-    header p {
-        font-size: 270%; /*a bit larger for bigger devices*/
-    }
-    #logo {
-        width: 14%; /*adjust for better propotion*/
-        top: 1px;
+    .reflection {
+        transform: rotatex(180deg) translatey(140%) translateX(1.5%) rotate(3deg) skew(-20deg);
+        padding: 0;
+        margin: 0;
+        color: rgb(255, 255, 255);
+       height: 25px;
+       z-index: 1;
     }
 }
 @media only screen and (min-width: 600px) {
     /* CSS for screens of 400px and up. will end when the next media query starts. */
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    header p {
-        font-size: 330%; 
-    }
     p.topFollow {
         top: 20%; /* under navbar to not have gaps between yellow and tang colors*/
     }
@@ -143,40 +171,43 @@ a:hover {
     nav a {
         padding: 0% 6.4%; /*minimizes empty space on the end of navbar */
     }
+    .reflection{
+        transform: rotatex(180deg) translatey(150%) translateX(1.5%) rotate(3deg) skew(-20deg);
+    }
+}
+/* following media fixes the nav bar breaking at this point */
+@media only screen and (max-width: 631px) and (min-width: 600px) {
+    nav a {
+        padding: 0 6%;
+    }
 }
 @media screen and (min-width: 768px) {
     /* CSS for screens of 768px and up. will end when the next media query starts. */
     /* Medium devices (landscape tablets, 768px and up) */
     /* for reference - Galaxy S8+ Landscape: 798px X 332px
     Microsoft Surface Portrait: 912px X 1225px */
-    header p { 
-        font-size: 400%;
-    }
     p.topFollow {
         top: 22%; /*minimizes difference between top of element and navbar*/
     }
     #logo {
-        top: 0; 
+        width: 11vw;
     }
     nav a {
-        padding: 0% 7.7%; /*minimizes empty space */
+        padding: 0% 7%; /*minimizes empty space */
+    }
+    .reflection{
+        transform: rotatex(180deg) translatey(160%) translateX(1.5%) rotate(3deg) skew(-20deg);
     }
 }
 @media only screen and (min-width: 992px) {
     /* CSS for screens of 992px and up. will end when the next media query starts. */
     /* Medium devices (landscape tablets, 944px and up .. 
     reference - 912px is portrait for the microsoft surface) */
-    header p {
-        font-size: 480%;
-    }
     p.topFollow {
-        /* top: 25%; */
         font-size: 110%;
     }
     #logo {
-        width: 12%;
-        left: 8%;
-        top: 0%;
+        width: 10vw;
     }
     nav {
         bottom: 65px;
@@ -184,44 +215,34 @@ a:hover {
     nav a {
         padding: 0.5% 8.7%;  /*minimizes empty space */
     }
+    .reflection{
+        transform: rotatex(180deg) translatey(180%) translateX(1.5%) rotate(3deg) skew(-20deg);
+    }
 }
 @media only screen and (min-width: 1200px) {
     /* CSS for screens of 1200px and up. will end when the next media query starts. */
     /* reference - Microsoft Surface Landscape: 1368px X 769px */
-    header p {
-        font-size: 560%;
-    }
     p.topFollow {
         font-size: 120%;
-    }
-    #logo {
-        width: 11%;
     }
     nav {
         bottom: 70px;
     }
     nav a {
-        padding: 0.5% 9.4%;
+        padding: 0.5% 9%;
+    }
+    .reflection{
+        transform: rotatex(180deg) translatey(190%) translateX(1.5%) rotate(3deg) skew(-20deg);
     }
 }
 @media only screen and (min-width: 1400px) {
     /* CSS for screens of 1400px and up. will end when the next media query starts. */
-    #logo {
-        width: 10%;
-        left: 13%;
-    }
-    nav a {
-        padding: 0.5% 9.9%;
-    }
+
 }
 @media only screen and (min-width: 1500px) {
     /* CSS for screens of 1500px and up. */
     /* Extra large devices (large laptops and desktops, 1500px and up)*/
     /* refernece - ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
-    #logo {
-        width: 9%;
-        left: 18%;
-    }
     nav a {
         padding: 0.5% 10%;
     }

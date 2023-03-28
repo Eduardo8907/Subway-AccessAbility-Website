@@ -12,25 +12,37 @@ body {
     background-color: white;
 }
 #wrapper {
-    width: 100%;
+    width: 80%;
+    padding: auto;
+    margin: auto;
 }
 /* Intro section on each page
 -----------------------------*/
 .introSection  {
     position: relative;
+    display: flex;
+    padding: 0;
 }
 .introSection figure{
-    width: 100%;
-    margin: 0%;
+    width: 50%;
+    height: 302px;
+    margin: 20px ;
+    padding: 0;
 }
 .introSection img{
     /* this filter allows for the text over the image to be more visible  */
     filter: grayscale(70%);
+    height: 300px;
+    max-width: 450px;
+    margin: 0 ;
+    padding: 0;
 }
 .introSection #mainImg {
     /* homepage image does not need a filter since there is 
     no text like the others */
     filter: none;
+    margin: 0 auto;
+    max-width: 600px;
 }
 .mainTitle{
     /* text infront of intro images of pages except the homepage */
@@ -40,11 +52,15 @@ body {
 }
 #mainTitle{
     /* text infront of homepage image */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
     background-color: #ffc800d6;
     color: white;
-    position: absolute;
     text-transform: uppercase;
     padding: 1%;
+    margin: 10px 0;
 }
 .subtitle{
     /* font infront of intro images  */
@@ -118,6 +134,9 @@ footer a {
 .list {
     color: white;
 }
+.wrap {
+    overflow-wrap: break-word;
+}
 li a:hover {
     background-color: yellow;
     color: black;
@@ -135,7 +154,7 @@ h2 a:hover {
 
 /* MEDIA QUERIES 
 ----------------------------------------------*/
-/* navbar media Query makes navbar responsive 
+/* navbar media Query - makes navbar responsive 
 600px and lower, nav menu will collapse into a hamburger menu */
 @media screen and (max-width: 600px) {
     .topnav  a {display: none;}
@@ -169,10 +188,8 @@ h2 a:hover {
     } 
     #mainTitle {
         width: 100%;
-        height: 15%;
-        bottom: 0%;
-        padding-top : 5%;
-        font-size: 100%;
+        bottom: -2.5%;
+        font-size: 4vw;
         text-align: center;
     }
     .subtitle, .sub2 {  /*sub headers are same size*/
@@ -194,6 +211,10 @@ h2 a:hover {
 @media only screen and (min-width: 400px) {
     /* CSS for screens of 400px and up. will end when the next media query starts. */
     /* reference - GalaxyS8 Portrait Mode : 412x718 */
+    .introSection figure{
+        width: 100%; /* image fits to screen */
+        margin: 0;
+    }
     h1 {
         font-size: 160%;
     }
@@ -202,10 +223,8 @@ h2 a:hover {
     }
     #mainTitle {
         width: 100%; /*aligns the yellow elements edges with the image width*/
-        height: 15%;
-        bottom: 0%;
-        padding-top: 6%;
-        font-size: 134%;
+        bottom: -3.1%;
+        font-size: 4vw;
         text-align: center;
     }
     #mainTitle h1{ /*style for the font inside the yellow section over the image*/
@@ -232,8 +251,7 @@ h2 a:hover {
         font-size: 120%;
     } 
     #mainTitle {
-        bottom: 0%;
-        font-size: 165%;
+        bottom: -3.5%;
     }
     h1 {
         font-size: 170%;
@@ -242,21 +260,20 @@ h2 a:hover {
 @media only screen and (min-width: 600px) {
     /* CSS for screens of 400px and up. will end when the next media query starts. */
     /* Small devices (portrait tablets and large phones, 600px and up) */
-    .introSection img{ /*gives white space on the sides of image to keep it from getting distrorted*/
-        margin: 1% 10%;
-        width: 80%;
-        height: 450px;
+    .introSection img{ 
+        /*gives white space on the sides of image to keep it from getting distrorted*/
+        margin: 0 0 0 auto;
+        width: 60%;
+        display: block;
     }
     .mainTitle, .subtitle, .sub2 { /*aligns these elements across all pages*/
-        left: 20%;
+        left: 0%;
     }
     #mainTitle { /*aligns yellow background with the image corners*/
-        margin: 1% 10%;
-        width: 78%;
-        height: 10%;
-        bottom: 1%;
-        padding-top: 4%;
-        font-size: 150%;
+        width: 58%;
+        margin: 0% 20%;
+        bottom: 0.5%;
+        font-size: 2.4vw;
     }
     .subtitle, .sub2 {  /*adjusted font size for screen size*/
         font-size: 125%;
@@ -274,16 +291,12 @@ h2 a:hover {
     /* for reference - Galaxy S8+ Landscape: 798px X 332px
     Microsoft Surface Portrait: 912px X 1225px */
     .introSection img{
-        margin: 1% 15%;
-        width: 70%;
+        margin: 1% 40%;
     }
     #mainTitle {
-        margin: 1% 15%;
-        width: 68%;
-        height: 10%;
-        bottom: 1%;
-        padding-top: 3%;
-        font-size: 170%;
+        margin: 0% 20%;
+        width: 58%;
+        bottom: 0.5%;
     }
     .footer_item { /*three footer items will sit on a row instead of a column */
         width: 30%;
@@ -297,21 +310,14 @@ h2 a:hover {
     /* CSS for screens of 992px and up. will end when the next media query starts. */
     /* Medium devices (landscape tablets, 944px and up .. 
     reference - 912px is portrait for the microsoft surface) */
-    .introSection img{
-        margin: 1% 20%;
-        width: 60%;
-    }
     .mainTitle, .subtitle, .sub2 {
         left: 30%;
     }
     #mainTitle {
-        margin: 1% 20%;
-        width: 58%;
-        padding-top: 2%;
-        font-size: 190%;
+        font-size: 2.5vw;
     }
     p {
-        font-size: 18px;
+        font-size: 16px;
     }
  
 }
@@ -319,24 +325,23 @@ h2 a:hover {
     /* CSS for screens of 1200px and up. will end when the next media query starts. */
     /* reference - Microsoft Surface Landscape: 1368px X 769px */
     #mainTitle {
-        font-size: 230%;
+        margin: 0% 20%;
+        width: 58%;
     }
 }
 @media only screen and (min-width: 1400px) {
     /* CSS for screens of 1400px and up. will end when the next media query starts. */
     p {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 @media only screen and (min-width: 1500px) {
     /* CSS for screens of 1500px and up. */
     /* Extra large devices (large laptops and desktops, 1500px and up)*/
     /* refernece - ASUS Laptop ROG Zephyrus M15 : 1536x721px  */
-    .introSection img{
-        margin: 1% 20%;
-        width: 60%;
-    }
-    p{
-        font-size: 22px;
+    #mainTitle {
+        margin: 0 25%;
+        width: 48%;
+        font-size: 2vw;
     }
 }

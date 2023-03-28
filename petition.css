@@ -14,13 +14,14 @@ it will adjust the placement for the top button and position the bottom one in t
 @media only screen and (max-width: 400px) {
 /* CSS for device screens smaller than 400px */
     .mainTitle {
-        width: 50%;
+        width: 100%;
         font-size: 110%;
-        bottom: 50%;
+        left: 20%;
+        bottom: 150px;
     }
     .subtitle {
-        width: 50%;
-        bottom: 30%;
+        left: 20%;
+        bottom: 120px;
     }
     button { 
         width: 23%; 
@@ -32,73 +33,69 @@ it will adjust the placement for the top button and position the bottom one in t
         position: absolute;
         text-decoration: none;
         width: 19%;
-        left: 30%; 
-        bottom: 45%;
+        left: 0%; 
+        bottom: 80px;
     }
 }
 @media only screen and (min-width: 400px) {
     /* CSS for screens of 400px and up. will end when the next media query starts. */
     /* reference - GalaxyS8 Portrait Mode : 412x718 */
     .mainTitle {
-        width: 50%;
+        width: 100%;
         font-size: 120%;
-        bottom: 50%;
+        left: 20%;
+        bottom: 150px;
     }
     .subtitle {
-        width: 35%;
-        bottom: 35%;
+        width: 100%;
+        left: 20%;
+        bottom: 120px;
+        font-size: 100%;
     }
     button { 
         margin: 0 40%; /* This centers the buttons*/ 
         background-color: #ffc800;
         width: 20%; 
         font-size: 15px;
-        padding: 2%;
     }
     .topButton {
         position: absolute;
         text-decoration: none;
         width: 19%;
-        left: 20%; /*moves button 30% from the center*/
-        bottom: 45%;
+        left: 0%; /*moves button 30% from the center*/
+        bottom: 80px;
     }
 }
 @media only screen and (min-width: 500px) {
     /* CSS for screens of 500px and up. will end when the next media query starts. */
     .mainTitle {
-        width: 70%;
-        font-size: 170%;
+        width: 250px;
     }
     .subtitle {
-        width: 40%;
+        width: 150px;
         bottom: 40%;
     }
     button { 
         margin: 0 37%; /* This centers the buttons*/ 
         width: 25%; 
         font-size: 15px;
-        padding: 2%;
     }
     .topButton {
-        width: 20%;
-        left: 20%;
-        bottom: 35%;
+        width: 75px;
+        left: 5%;
     }
 }
 @media only screen and (min-width: 600px) {
     /* CSS for screens of 400px and up. will end when the next media query starts. */
     /* Small devices (portrait tablets and large phones, 600px and up) */
     .mainTitle {
-        font-size: 175%;
-    }
-    .subtitle {
-        width: 35%;
+        font-size: 125%;
     }
     .topButton {
-        width: 17%; /*width adjustment for screensize*/
+        width: 100px; /*width adjustment for screensize*/
         height: 10%;
         padding: 0%;
-        left: 20%;
+        left: -25px;
     }
 }
 @media screen and (min-width: 768px) { 
@@ -107,7 +104,8 @@ it will adjust the placement for the top button and position the bottom one in t
     /* for reference - Galaxy S8+ Landscape: 798px X 332px
     Microsoft Surface Portrait: 912px X 1225px */
     .mainTitle {
-        width: 50%;
+        width: 360px;
+        padding: 10px 0;
         font-size: 180%;
     }
     .subtitle{ 
@@ -121,8 +119,7 @@ it will adjust the placement for the top button and position the bottom one in t
     /* both buttons dont have to same width with one rule set so gave them individual
     rules to keep similar width sizes */
     .topButton {
-        width: 13%;
-        padding: 0%;
+        left: -50px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -130,7 +127,6 @@ it will adjust the placement for the top button and position the bottom one in t
     /* Medium devices (landscape tablets, 944px and up .. 
     reference - 912px is portrait for the microsoft surface) */
     .mainTitle {
-        width: 50%;
         font-size: 180%;
     }
     .subtitle {
@@ -139,16 +135,13 @@ it will adjust the placement for the top button and position the bottom one in t
     button {
         width: 14%;
     }
-    .topButton {
-        width: 9%;
-    }
 }
 @media only screen and (min-width: 1200px) {
     /* CSS for screens of 1200px and up. will end when the next media query starts. */
     /* reference - Microsoft Surface Landscape: 1368px X 769px */
     .mainTitle {
         font-size: 200%;
-        width: 35%; 
+        width: 400px; 
     }
     .subtitle {
         width: 17%;
@@ -161,17 +154,11 @@ it will adjust the placement for the top button and position the bottom one in t
 }
 @media only screen and (min-width: 1400px) {
     /* CSS for screens of 1400px and up. will end when the next media query starts. */
-    .mainTitle {
-        width: 30%;
-    }
     .subtitle {
         width: 15%;
     }
     button {
         width: 11%;
-    }
-    .topButton {
-        width: 8%;
     }
 }
 @media only screen and (min-width: 1500px) {
